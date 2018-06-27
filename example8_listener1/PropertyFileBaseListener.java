@@ -1,39 +1,39 @@
-// Generated from ArrayInit.g4 by ANTLR 4.7
+// Generated from PropertyFile.g4 by ANTLR 4.7
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 /**
- * This class provides an empty implementation of {@link ArrayInitListener},
+ * This class provides an empty implementation of {@link PropertyFileListener},
  * which can be extended to create a listener which only needs to handle a subset
  * of the available methods.
  */
-public class ArrayInitBaseListener implements ArrayInitListener {
+public class PropertyFileBaseListener implements PropertyFileListener {
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInit(ArrayInitParser.InitContext ctx) { }
+	@Override public void enterFile(PropertyFileParser.FileContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInit(ArrayInitParser.InitContext ctx) { }
+	@Override public void exitFile(PropertyFileParser.FileContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterValue(ArrayInitParser.ValueContext ctx) { }
+	@Override public void enterProp(PropertyFileParser.PropContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitValue(ArrayInitParser.ValueContext ctx) { }
+	@Override public void exitProp(PropertyFileParser.PropContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

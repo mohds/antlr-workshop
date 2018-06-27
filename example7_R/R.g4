@@ -35,6 +35,9 @@ expr	: '{' exprlist '}'
 	| expr ('->'|'->>'|':=') expr
 	| 'function' '(' formlist? ')' expr
 	| expr '(' sublist ')'
+	| STRING
+	| ID
+	| INT
 	;
 
 exprlist	: expr_or_assign ((';' | NL) expr_or_assign?)*
@@ -63,6 +66,12 @@ sub	: expr
 
 ID	: '.' (LETTER|'_'|'.') (LETTER|DIGIT|'_'|'.')*
 	| LETTER (LETTER|DIGIT|'_'|'.')*
+	;
+
+INT	: DIGIT+ ;
+
+STRING	: '"' (  ~[\\"] )*? '"'
+	| '\'' ( ~[\\'] )*? '\''
 	;
 
 fragment LETTER	: [a-zA-Z];
