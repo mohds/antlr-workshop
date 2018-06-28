@@ -1,39 +1,63 @@
-// Generated from PropertyFile.g4 by ANTLR 4.7.1
+// Generated from LExpr.g4 by ANTLR 4.7.1
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 /**
- * This class provides an empty implementation of {@link PropertyFileListener},
+ * This class provides an empty implementation of {@link LExprListener},
  * which can be extended to create a listener which only needs to handle a subset
  * of the available methods.
  */
-public class PropertyFileBaseListener implements PropertyFileListener {
+public class LExprBaseListener implements LExprListener {
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFile(PropertyFileParser.FileContext ctx) { }
+	@Override public void enterS(LExprParser.SContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFile(PropertyFileParser.FileContext ctx) { }
+	@Override public void exitS(LExprParser.SContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterProp(PropertyFileParser.PropContext ctx) { }
+	@Override public void enterAdd(LExprParser.AddContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitProp(PropertyFileParser.PropContext ctx) { }
+	@Override public void exitAdd(LExprParser.AddContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterMult(LExprParser.MultContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMult(LExprParser.MultContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterInt(LExprParser.IntContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitInt(LExprParser.IntContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
