@@ -1,0 +1,14 @@
+HTTP/1.1 302 Found
+Date: Tue, 20 Jan 2009 01:30:04 GMT
+Server: Apache/2.2.8 (Ubuntu) PHP/5.2.4-2ubuntu5.4 with Suhosin-Patch mod_ssl/2.2.8 OpenSSL/0.9.8g
+X-Powered-By: PHP/5.2.4-2ubuntu5.4
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: PHPSESSID=9198d0145f3d8bebbaa3f981c9b704a3; path=/
+Location: https://kynes.appsci.queensu.ca/
+Content-Length: 0
+Keep-Alive: timeout=15, max=67
+Connection: Keep-Alive
+Content-Type: text/html
+

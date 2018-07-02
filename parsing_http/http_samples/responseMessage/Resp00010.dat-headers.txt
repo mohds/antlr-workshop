@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Date: Tue, 20 Jan 2009 01:29:50 GMT
+Server: Apache/2.2.8 (Ubuntu) PHP/5.2.4-2ubuntu5.4 with Suhosin-Patch mod_ssl/2.2.8 OpenSSL/0.9.8g
+Last-Modified: Thu, 12 Apr 2007 17:41:17 GMT
+ETag: "4220c-33-42dede4dc8940"
+Accept-Ranges: bytes
+Content-Length: 51
+Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+Content-Type: image/gif
+

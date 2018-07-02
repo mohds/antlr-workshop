@@ -1,0 +1,12 @@
+GET /shared/panels/sidebar/subhdr2_bkgrnd.gif HTTP/1.1
+Host: kynes.appsci.queensu.ca
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.11) Gecko/20080114 BonEcho/2.0.0.11
+Accept: image/png,*/*;q=0.5
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://kynes.appsci.queensu.ca/shared/styles/default.css
+Cookie: PHPSESSID=1b82f654c74b9412f4ccef1fb312dc25
+

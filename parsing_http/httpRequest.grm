@@ -1,0 +1,589 @@
+#pragma -char -idchars '-'
+
+compounds
+    //
+end compounds
+
+keys
+    'OPTIONS 'GET 'HEAD 'POST 'PUT 'DELETE 'TRACE 'CONNECT
+    'Cache-Control 'Connection 'Date 'Pragma 'Trailer 'Transfer-Encoding
+    'Upgrade 'Via 'Warning 'Accept 'Accept-Charset 'Accept-Encoding
+    'Accept-Language 'Authorization 'Expect 'From 'Host 'If-Match
+    'If-Modified-Since 'If-None-Match 'If-Range 'If-Unmodified-Since
+    'Max-Forwards 'Proxy-Authorization 'Range 'Referer 'TE 'User-Agent
+    'Allow 'Content-Encoding 'Content-Language 'Content-Length
+    'Content-Location 'Content-MD5 'Content-Range 'Content-Type 'Expires
+    'Last-Modified 
+end keys
+
+define program
+    [request_message]
+end define
+
+define request_message
+    [request_line] [repeat headers_messages] [CRLF] [opt message_body]
+end define
+
+define request_line
+    [method] [space] [request_uri] [space] [http_version] [CRLF]
+end define
+
+define CRLF
+    [CR] [newline]
+end define
+
+define method
+    'OPTIONS | 'GET | 'POST | 'HEAD | 'PUT | 'DELETE | 'TRACE | 'CONNECT
+end define
+
+define request_uri
+	[abs_path]
+end define
+
+define abs_path
+%    '/ [repeat not_space]
+    [repeat not_space]
+end define
+
+define not_space
+   [not space] [token_or_key]
+end define
+
+define http_version
+      HTTP '/ 1.0
+    | HTTP '/ 1.1
+end define
+
+define headers_messages
+      [general_header] [CRLF] 
+    | [request_header] [CRLF]
+    | [entity_header]  [CRLF] 
+end define
+
+define general_header
+      [Cache_Control]
+    | [Connection]
+    | [Date]
+    | [Pragma]
+    | [Trailer]
+    | [Transfer_Encoding]
+    | [Upgrade]
+    | [Via]
+    | [Warning]
+end define
+
+define Cache_Control
+    'Cache-Control : [list cache_request_directive+]
+end define
+
+define cache_request_directive
+      no-cache
+    | no-store
+    | max-age = [delta_seconds]
+    | max-stale [opt stale_time]
+    | min-fresh = [delta_seconds]
+    | no-transform
+    | only-if-cached
+    | [cache_extension]
+end define
+
+define delta_seconds
+    [number]
+end define
+
+define stale_time
+    = [delta_seconds]
+end define
+
+define cache_extension
+    [id]
+end define
+
+define Connection
+    'Connection : [space] [list connection_token+]
+end define
+
+define connection_token
+    [id]
+end define
+
+define Date
+    'Date : [HTTP_date]
+end define
+
+define HTTP_date
+      [rfc1123_date]
+    | [rfc850_date]
+    | [asctime_date]
+end define
+
+define rfc1123_date
+    [wkday], [date1] [time] GMT
+end define
+
+define rfc850_date
+    [weekday], [date2] [time] GMT
+end define
+
+define asctime_date
+    [wkday], [date3] [time] [number]
+end define
+
+define time
+    [number]
+end define
+
+define date1
+    [number] [month] [number]
+end define
+
+define date2
+    [number] - [month] - [number]
+end define
+
+define date3
+    [month] [number]
+end define
+
+define wkday
+    Mon | Tue | Wed | Thu | Fri | Sat | Sun
+end define
+
+define weekday
+    Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday
+end define
+
+define month
+    Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec
+end define 
+
+define Pragma
+    'Pragma : [list Pragma_directive+]
+end define
+ 
+define Pragma_directive
+    no-cache | [extension_pragma]
+end define
+
+define extension_pragma
+      [id] = [id]
+    | [id] = [stringlit]
+end define
+
+define Trailer
+    'Trailer : [list field_name+]
+end define
+
+define field_name
+    [id]
+end define
+
+define Transfer_Encoding
+    'Transfer-Encoding : [list transfer_coding+]
+end define
+
+define transfer_coding
+    chunked | [transfer_extension]
+end define
+
+define transfer_extension
+    [id] [repeat parameter]
+end define
+
+define parameter
+    [attribute] = [value]
+end define
+
+define attribute
+    [id]
+end define
+
+define value
+    [id] | [stringlit]
+end define
+
+define Upgrade
+    'Upgrade : [list product+]
+end define
+
+define product           %can't find the definition
+    [id]
+end define
+
+define Via
+    'Via : [list received_info+]
+end define
+
+define received_info
+    [opt protocol_name] [protocol_version]
+end define
+
+define protocol_name
+    [id] /
+end define
+
+define protocol_version
+    [id]
+end define
+
+define received_by
+    [host] : [opt port] | [pseudonym]
+end define
+
+define host
+    [id] . [id] . [id]
+end define
+
+define pseudonym
+    [id]
+end define
+
+define Warning
+    'Warning : [list warning_value+]
+end define
+
+define warning_value
+    [warn_code] [warn_agent] [warn_text] [opt warn_date]
+end define
+
+define warn_code
+    [number]
+end define
+
+define warn_agent
+    [host] : [opt port] | [pseudonym]
+end define
+
+define port
+    [number]
+end define
+
+define warn_text
+    [stringlit]
+end define
+
+define warn_date
+    "[HTTP_date]"
+end define
+
+define request_header
+      [Accept]
+    | [Accept_Charset]
+    | [Accept_Encoding]
+    | [Accept_Language]
+    | [Authorization]
+    | [Expect]
+    | [From]
+    | [Host]
+    | [If_Match]
+    | [If_Modified_Since]
+    | [If_None_Match]
+    | [If_Range]
+    | [If_Unmodified_Since]
+    | [Max_Forwards]
+    | [Proxy_Authorization]
+    | [Range]
+    | [Referer]
+    | [TE]
+    | [User_Agent]
+end define
+
+define Accept
+    'Accept : [space] [list accept_info]
+end define
+
+define accept_info
+    [media_range] [opt accept_params]
+end define
+
+define media_range
+      * / *
+    | [type] / *
+    | [type] / [subtype]
+end define
+
+define type
+    [id]
+end define
+
+define subtype
+    [id] [repeat subtype_extension]
+end define
+
+define subtype_extension
+    '+ [id]
+end define
+
+define accept_params
+    ; q = [qvalue] [opt accept_extension]
+end define
+
+define qvalue
+    0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1
+end define
+
+define accept_extension
+      ; [id] = [id]
+    | ; [id] = [stringlit]
+end define
+
+define Accept_Charset
+    'Accept-Charset : [space] [list accept_charset_info+]
+end define
+
+define accept_charset_info
+    [charset] [opt quality_value]
+end define
+
+define charset
+      *
+    | [id]
+end define
+
+define quality_value
+    ; q = [qvalue]
+end define
+
+define Accept_Encoding
+    'Accept-Encoding : [space] [list accept_encoding_info+]
+end define
+
+define accept_encoding_info
+    [coding] [opt quality_value]
+end define
+
+define coding
+      *
+    | [id]
+end define
+
+define Accept_Language
+    'Accept-Language : [space] [list accept_language_info+]
+end define
+
+define accept_language_info
+    [language_range] [ opt quality_value]
+end define
+
+define language_range
+      *
+    | [id]
+    | [id] - [id]
+end define
+
+define Authorization
+    'Authorization : [credentials]
+end define
+
+define credentials
+    [id]
+end define
+
+define Expect
+    'Expect : [list expect_info+]
+end define
+
+define expect_info
+      100-continue
+    | [expectation_extension]
+end define
+
+define expectation_extension
+      [id]
+    | [id] = [id] [opt expect_params]
+    | [id] = [stringlit] [opt expect_params]
+end define
+
+define expect_params
+      ; [id]
+    | ; [id] = [id]
+    | ; [id] = [stringlit]
+end define
+
+define From
+    'From : [id]
+end define
+
+define Host
+%      'Host : [space] [id] . [id] . [id]                 % domain name
+%    | 'Host : [space] [id] . [id] . [id] . [id]          % ipV4 address
+    'Host : [space] [mime_value]
+end define
+
+define If_Match
+    'If-Match : [if_match_info]
+end define
+
+define if_match_info
+      '*
+    | [list entity_tag+]
+end define
+
+define entity_tag
+    [id]
+end define
+
+define If_Modified_Since
+    'If-Modified-Since : [HTTP_date]
+end define
+
+define If_None_Match
+    'If-None-Match : [if_none_match_info]
+end define
+
+define if_none_match_info
+      '*
+    | [list entity_tag+]
+end define
+
+define If_Range
+      'If-Range : [entity_tag]
+    | 'If-Range : [HTTP_date]
+end define
+
+define If_Unmodified_Since
+    'If-Unmodified-Since : [HTTP_date]
+end define
+
+define Max_Forwards
+    'Max-Forwards : [number]
+end define
+
+define Proxy_Authorization
+    'Proxy-Authorization : [credentials]
+end define
+
+define Range
+    'Range : [ranges_specifier]
+end define
+
+define ranges_specifier
+    [byte_ranges_specifier]
+end define
+
+define byte_ranges_specifier
+    bytes = [byte_range_set]
+end define
+
+define byte_range_set
+      [list byte_range_spec+]
+    | [list suffix_byte_range_spec+]
+end define
+
+define byte_range_spec
+    [first_byte_pos] - [opt last_byte_pos]
+end define
+
+define first_byte_pos
+    [repeat number+]
+end define
+
+define last_byte_pos
+    [repeat number+]
+end define
+
+define suffix_byte_range_spec
+    - [suffix_length]
+end define
+
+define suffix_length
+    [repeat number]
+end define
+
+define Referer
+    'Referer : [space] [mime_value]
+end define
+
+define TE
+    'TE : [space] [list t_coding]
+end define
+
+define t_coding
+    trailers | [transfer_extension] [opt accept_params]
+end define
+
+define User_Agent
+    'User-Agent : [space] [mime_value]
+end define
+
+define mime_value
+   [repeat not_eol]
+end define
+
+define not_eol
+    [not CRLF] [token_or_key]
+end define
+
+define token_or_key
+   [token] | [key]
+end define
+
+define entity_header
+      [Allow]
+    | [Content_Encoding]
+    | [Content_Language]
+    | [Content_Length]
+    | [Content_Location]
+    | [Content_MD5]
+    | [Content_Range]
+    | [Content_Type]
+    | [Expires]
+    | [Last_Modified]
+    | [extension_header]
+end define
+
+define Allow
+    'Allow : [space] [list method]
+end define
+
+define Content_Encoding
+    'Content-Encoding : [space] [list id+]
+end define
+
+define Content_Language
+    'Content-Language : [space] [list id+]
+end define
+
+define Content_Length
+    'Content-Length : [space] [content_length_number]
+end define
+
+define content_length_number
+     [number]
+end define
+
+define Content_Location
+    'Content-Location : [space] [id] . [id] . [id]
+end define
+
+define Content_MD5
+    'Content-MD5 : [space] [mime_value]
+end define
+
+define Content_Range
+    'Content-Range : [space] [id] [number] - [number] / [number]   
+end define
+
+define Content_Type
+    'Content-Type : [space] [mime_value]
+end define
+
+define Expires
+    'Expires : [space] [HTTP_date]
+end define
+
+define Last_Modified
+    'Last-Modified : [space] [HTTP_date]
+end define
+
+define extension_header
+     [id] : [space] [mime_value]
+end define
+
+define message_body
+    [repeat token_or_key]
+end define
+
+tokens
+     CR				""
+end tokens
