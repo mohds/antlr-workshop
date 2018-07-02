@@ -1,4 +1,4 @@
-// Generated from LExpr.g4 by ANTLR 4.7.1
+// Generated from LExpr.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class LExprParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.7.1", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.7", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -94,6 +94,11 @@ public class LExprParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LExprListener ) ((LExprListener)listener).exitS(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LExprVisitor ) return ((LExprVisitor<? extends T>)visitor).visitS(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final SContext s() throws RecognitionException {
@@ -145,6 +150,11 @@ public class LExprParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LExprListener ) ((LExprListener)listener).exitAdd(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LExprVisitor ) return ((LExprVisitor<? extends T>)visitor).visitAdd(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 	public static class MultContext extends EContext {
 		public List<EContext> e() {
@@ -163,6 +173,11 @@ public class LExprParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LExprListener ) ((LExprListener)listener).exitMult(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LExprVisitor ) return ((LExprVisitor<? extends T>)visitor).visitMult(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 	public static class IntContext extends EContext {
 		public TerminalNode INT() { return getToken(LExprParser.INT, 0); }
@@ -174,6 +189,11 @@ public class LExprParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof LExprListener ) ((LExprListener)listener).exitInt(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof LExprVisitor ) return ((LExprVisitor<? extends T>)visitor).visitInt(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
