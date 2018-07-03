@@ -100,10 +100,216 @@ pragma_directive: 'no-cache'
 extension_pragma: ID '=' ID
 		| ID '=' stringlit
 		;
+stringlit	: STRING;
+
+trailer	:'Trailer' ':' filed_name (',' field_name)*;
+
+field_name	: ID;
+
+transfer_encoding	: 'Transfer-Encoding' ':' transfer_coding (transfer_coding)*;
+
+transfer_coding	: 'chunked' 
+		| transfer_extension
+		;
+
+transfer_extension	: ID (parameter)+;
+
+parameter	: attribute '=' value;
+
+attribute	: ID;
+
+value	: ID
+	| stringlit
+	;
+
+upgrade	:'Upgrade' ':' product (',' product)*; 
+
+product	: ID;
+
+via	:'Via' received_info (',' received_info)*;
+
+received_info	: protocol_name? protocol_version;
+
+protocol_name	: ID '\/';
+
+protocol_version: ID;
+
+// not referenced anywhere but defined by Ben
+received_by	: host ':' (porti? | pseudonym);
+
+host:	ID '.' ID '.' ID;
+
+pseudonym	: ID;
+
+warning	: 'Warning' ':' warning_value (',' warning_value)*;
+
+warning_value	:warn_code warn_agent warn_text warn_date?;
+
+warn_code	: NUMBER;
+
+warn_agent	: host ':' (port? | pseudonym);
+
+port	: NUMBER;
+
+warn_text	: stringlit;
+
+warn_date	: http_date;
+
+request_header	: accept
+		| accept_charset
+		| accept_encoding
+		| accept_language
+		| authorization
+		| expect
+		| from
+		| host_
+		| if_match
+		| if_modified_since
+		| if_none_match
+		| if_range
+		| if_unmodified_since
+		| if_none_match
+		| if_range
+		| if_unmodified_since
+		| max_forwards
+		| proxy_authorization
+		| range
+		| referer
+		| TE
+		| user_agent 
+		;
+
+accept	:'Accept' ':' accept_info (',' accept_info)*;
+
+accept_info	: media_range accept_params (',' accept_params)*;
+
+media_range	: '*\/*'
+		| type '\/*'
+		| type '\/' subtype	
+		;
+
+type	: ID;
+
+subtype	: ID (subtype_extension)+;
+
+subtype_extension	: '+' ID;
+
+accept_params	: ';' 'q' '=' qvalue accept_extension?;
+
+qvalue	: '0' | '0.1' | '0.2' | '0.3' | '0.4' | '0.5' | '0.6' | '0.7' | '0.8' | '0.9' | '1'; 
+
+accept_extension: ';' ID '=' ID
+		| ';' ID '=' stringlit
+		;
+accept_charset	: 'Accept-Charset' ':' accept_charset_info (',' accept_charset_info)*;
+
+accept_charset_info	: charset quality_value?;
+
+charset	: '*'
+	| ID
+	;
+
+quality_value	: ';' 'q' '=' qvalue;
+
+accept_encoding	: 'Accept-Encoding' ':' accept_encoding_info (',' accept_encoding_info)*;
+
+accept_encoding_info	: coding quality_value?;
+
+coding	: '*'
+	| ID
+	;
+
+accept_language	: 'Accept-Language' ':' accept_language_info (',' accept_language_info)*;
+
+accept_language_info	: language_range quality_value?;
+
+language_range	: '*'
+		| ID
+		| ID '-' ID
+		;
+
+authorization	: 'Authorization' ':' credentials;
+
+credentials	: ID;
+
+expect	: 'Expect' ':' expect_info (',' expect_info)*;
+
+expect_info	: '100-continue'
+		| expectation_extension
+		;
+
+expectation_extention	: ID
+			| ID '=' ID expect_params?
+			| ID '=' stringlit expect_params?
+			;
+
+expect_params	: ';' ID
+		| ';' ID '=' ID
+		| ';' ID '=' stringlit
+		;
+
+from	: 'From' ':' ID;
+
+host_	: 'Host' ':' mime_value;
+
+if_match: 'If-Match' ':' if_match_info;
+
+if_match_info	: '*'
+		| entity_tag (',' entity_tag);
+		;
+
+entity_tag	: ID;
+
+if_modified_since	: 'If-Modified-Since' ':' http_date;
+
+if_none_match	: 'If-None-Match' ':' if_none_match_info;
+
+if_none_match_info	: '*'
+			| entity_tag (',' entity_tag)
+			;
+if_range: 'If-Range' ':' entity_tag
+	| 'If-Range' ':' http_date
+	;
+
+if_unmodified_since	: 'If-Unmodified-Since' ':' http_date;
+
+max_forwards	: 'Max-Forwards' ':' NUMBER;
+
+proxy_authorization	: 'Proxy-Authorization' ':' credentials;
+
+range	: 'Range' ':' ranges_specifier;
+
+ranges_specifier: byte_ranges_specifier;
+
+byte_ranges_specifier	: 'bytes' '=' byte_range_set;
+
+byte_range_set	: byte_range_spec (',' byte_range_spec)*
+		| suffix_byte_range_spec (',' suffix_byte_range_spec)*
+		;
+
+byte_range_spec	: first_byte_pos '-' last_byte_pos?;
+
+first_byte_pos	: NUMBER+;
+
+last_byte_pos	: NUMBER+;
+
+
 
 message_body	:
 		| // can be empty
 		;
+
+
+
+
+
+
+
+
+
+
+
+
 
 new_line	: '\n';
 NUMBER	: '0' | [1-9] ([0-9])*;
