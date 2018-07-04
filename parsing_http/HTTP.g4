@@ -3,7 +3,7 @@
 
 grammar HTTP;
 
-key 	: 'OPTIONS' | 'GET' | 'HEAD' | 'POST' | 'PUT' | 'DELETE' | 'TRACE' | 'CONNECT' | 'Cache-Control' | 'Connection' | 'Date' | 'Pragma' | 'Trailer' | 'Transfer-Encoding' | 'Upgrade' | 'Via' | 'Warning' | 'Accept' | 'Accept-Charset' | 'Accept-Encoding' | 'Accept-Language' | 'Authorization' | 'Expect' | 'From' | 'Host' | 'If-Match' | 'If-Modified-Since' | 'If-None-Match' | 'If-Range' | 'If-Unmodified-Since' | 'Max-Forwards' | 'Proxy-Authorization' | 'Range' | 'Referer' | 'TE' | 'User-Agent' | 'Allow' | 'Content-Encoding' | 'Content-Language' | 'Content-Length' | 'Content-Location' | 'Content-MD5' | 'Content-Range' | 'Content-Type' | 'Expires' | 'Last-Modified' ;
+key 	: 'Cache-Control' | 'Connection' | 'Date' | 'Pragma' | 'Trailer' | 'Transfer-Encoding' | 'Upgrade' | 'Via' | 'Warning' | 'Accept' | 'Accept-Charset' | 'Accept-Encoding' | 'Accept-Language' | 'Authorization' | 'Expect' | 'From' | 'Host' | 'If-Match' | 'If-Modified-Since' | 'If-None-Match' | 'If-Range' | 'If-Unmodified-Since' | 'Max-Forwards' | 'Proxy-Authorization' | 'Range' | 'Referer' | 'TE' | 'User-Agent' | 'Allow' | 'Content-Encoding' | 'Content-Language' | 'Content-Length' | 'Content-Location' | 'Content-MD5' | 'Content-Range' | 'Content-Type' | 'Expires' | 'Last-Modified' ;
 
 // Ben's grammar separated the request from the reply grammar
 // I will join the request and reply into the same grammar
@@ -12,22 +12,22 @@ http	: request
 	;
 
 // request_message in Ben's HTTP grammar
-request	: request_line (header_message)+ message_body;
+request	: request_line new_line (header_message new_line)+ message_body;
 
-request_line	: method request_uri http_version new_line;
+request_line	: method request_uri  http_version ;
 
 //reply	:
 //	;
 
 method	: 'OPTIONS' | 'GET' | 'POST' | 'HEAD' | 'PUT' | 'DELETE' | 'TRACE' | 'CONNECT';
 
-request_uri	: TEXT;
+request_uri	: '/' (ID ('.' ID)? '/')*  ;
 
-http_version	: 'HTTP\/1.0' | 'HTTP\/1.1';
+http_version	: 'HTTP/1.0' | 'HTTP/1.1';
 
-header_message	: general_header new_line
-		| request_header new_line
-		| entity_header new_line 
+header_message	: general_header 
+		| request_header
+		| entity_header 
 		;
 
 general_header	: cache_control
@@ -81,7 +81,7 @@ time	: NUMBER;
 
 date1	: NUMBER month NUMBER;
 
-date2	: NUMBER '-' month '-' number;
+date2	: NUMBER '-' month '-' NUMBER;
 
 date3	: month NUMBER;
 
@@ -102,7 +102,7 @@ extension_pragma: ID '=' ID
 		;
 stringlit	: STRING;
 
-trailer	:'Trailer' ':' filed_name (',' field_name)*;
+trailer	:'Trailer' ':' field_name (',' field_name)*;
 
 field_name	: ID;
 
@@ -130,14 +130,14 @@ via	:'Via' received_info (',' received_info)*;
 
 received_info	: protocol_name? protocol_version;
 
-protocol_name	: ID '\/';
+protocol_name	: ID '/';
 
 protocol_version: ID;
 
 // not referenced anywhere but defined by Ben
-received_by	: host ':' (porti? | pseudonym);
+received_by	: host ':' (port? | pseudonym);
 
-host:	ID '.' ID '.' ID;
+host:	ID '.' ID ('.' ID)*;
 
 pseudonym	: ID;
 
@@ -175,7 +175,7 @@ request_header	: accept
 		| proxy_authorization
 		| range
 		| referer
-		| TE
+		| te
 		| user_agent 
 		;
 
@@ -183,9 +183,9 @@ accept	:'Accept' ':' accept_info (',' accept_info)*;
 
 accept_info	: media_range accept_params (',' accept_params)*;
 
-media_range	: '*\/*'
-		| type '\/*'
-		| type '\/' subtype	
+media_range	: '*/*'
+		| type '/*'
+		| type '/' subtype	
 		;
 
 type	: ID;
@@ -238,7 +238,7 @@ expect_info	: '100-continue'
 		| expectation_extension
 		;
 
-expectation_extention	: ID
+expectation_extension	: ID
 			| ID '=' ID expect_params?
 			| ID '=' stringlit expect_params?
 			;
@@ -250,12 +250,12 @@ expect_params	: ';' ID
 
 from	: 'From' ':' ID;
 
-host_	: 'Host' ':' mime_value;
+host_	: 'Host' ':' host (':')?;
 
 if_match: 'If-Match' ':' if_match_info;
 
 if_match_info	: '*'
-		| entity_tag (',' entity_tag);
+		| entity_tag (',' entity_tag)
 		;
 
 entity_tag	: ID;
@@ -289,33 +289,85 @@ byte_range_set	: byte_range_spec (',' byte_range_spec)*
 
 byte_range_spec	: first_byte_pos '-' last_byte_pos?;
 
-first_byte_pos	: NUMBER+;
+first_byte_pos	: NUMBER;
 
-last_byte_pos	: NUMBER+;
+last_byte_pos	: NUMBER;
 
+suffix_byte_range_spec	: '-' suffix_length;
 
+suffix_length	: NUMBER;
 
-message_body	:
-		| // can be empty
+referer	: 'Referer' ':' ID ; // ID should be TEXT
+
+te	: 'TE' ':' t_coding (',' t_coding)*;
+
+t_coding: trailer
+	| transfer_extension accept_params?
+	;
+
+user_agent	: 'User-Agent' ':' product '/' product_version COMMENT;
+
+product_version	: NUMBER ('.' NUMBER)+;
+
+// comment	: (':' | ';' | ')' | '(' | '/' | '-' | ID | '.' | '*' | ',')*; // improve this
+
+// COMMENT	: (~[\n])*;
+
+entity_header	: allow
+		| content_encoding
+		| content_language
+		| content_length
+		| content_location
+		| content_md5
+		| content_type
+		| expires
+		| last_modified
+		| extension_header
 		;
 
+allow	: 'Allow' ':' method (',' method)*;
 
+content_encoding: 'Content-Encoding' ':' ID (',' ID);
 
+content_language: 'Content-Language' ':' ID (',' ID);
 
+content_length	: 'Content-Length' ':' content_length_number;
 
+content_length_number	: NUMBER;
 
+content_location: 'Content-Location' ':' ID '.' ID '.' ID;
 
+content_md5	: 'Content-MD5' ':' ID; // ID should be TEXT
 
+content_range	: 'Content-Range' ':' ID NUMBER '-' NUMBER '/' NUMBER;
 
+content_type	: 'Content-Type' ':' mime_value;
 
+mime_value	: (not_eol)+;
 
+not_eol	: ~'\n' token_or_key ;
 
+token_or_key	: token | key;
+
+token : key; // temp, just to compile
+
+expires: 'Expires' ':' http_date;
+
+last_modified	: 'Last-Modified' ':' http_date;
+
+extension_header: key ':' mime_value;
+
+message_body	: (token_or_key)*
+		;
 
 new_line	: '\n';
-NUMBER	: '0' | [1-9] ([0-9])*;
-TEXT	: (ESC | ~[\\])*;
 ID	: [a-zA-Z] ([a-zA-Z0-9])*;
-STRING	: '"' (ESC | ~["\\]) '"';
+STRING	: '"' (ESC | ~["\\])* '"';
+// TEXT	: (ESC | ~[\\])+;
 fragment ESC	: '\\' (["\\/bfnrt] | UNICODE);
 fragment UNICODE: 'u' HEX HEX HEX HEX;
 fragment HEX	: [0-9a-fA-F];
+fragment COMMENT: ~[\n];
+NUMBER	: ([0-9])+;
+
+WS	: [ \t\r]+ -> skip;
