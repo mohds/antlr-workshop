@@ -21,7 +21,7 @@ request_line	: method request_uri  http_version ;
 
 method	: 'OPTIONS' | 'GET' | 'POST' | 'HEAD' | 'PUT' | 'DELETE' | 'TRACE' | 'CONNECT';
 
-request_uri	: '/' (ID ('.' ID)? '/')*  ;
+request_uri	: '/' (ID ('.' ID)? '/'?)*  ;
 
 http_version	: 'HTTP/1.0' | 'HTTP/1.1';
 
@@ -181,7 +181,7 @@ request_header	: accept
 
 accept	:'Accept' ':' accept_info (',' accept_info)*;
 
-accept_info	: media_range accept_params (',' accept_params)*;
+accept_info	: media_range accept_params? (',' accept_params)*;
 
 media_range	: '*/*'
 		| type '/*'
@@ -305,9 +305,11 @@ t_coding: trailer
 	| transfer_extension accept_params?
 	;
 
-user_agent	: 'User-Agent' ':' product '/' product_version COMMENT;
+user_agent	: 'User-Agent' ':' product '/' product_version comment ;
 
-product_version	: NUMBER ('.' NUMBER)+;
+comment	: (~'\n')*? ;
+
+product_version	: NUMBER ('.' NUMBER)* ; // FIX THIS
 
 // comment	: (':' | ';' | ')' | '(' | '/' | '-' | ID | '.' | '*' | ',')*; // improve this
 
@@ -361,13 +363,13 @@ message_body	: (token_or_key)*
 		;
 
 new_line	: '\n';
-ID	: [a-zA-Z] ([a-zA-Z0-9])*;
+ID	: [a-zA-Z] ([\-a-zA-Z0-9])*;
 STRING	: '"' (ESC | ~["\\])* '"';
 // TEXT	: (ESC | ~[\\])+;
 fragment ESC	: '\\' (["\\/bfnrt] | UNICODE);
 fragment UNICODE: 'u' HEX HEX HEX HEX;
 fragment HEX	: [0-9a-fA-F];
-fragment COMMENT: ~[\n];
-NUMBER	: ([0-9])+;
+// COMMENT: .*?;
+NUMBER	: [0-9]+;
 
 WS	: [ \t\r]+ -> skip;

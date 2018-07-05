@@ -111,7 +111,6 @@ ID=110
 STRING=111
 NUMBER=112
 WS=113
-COMMENT=114
 'Cache-Control'=1
 'Connection'=2
 'Date'=3

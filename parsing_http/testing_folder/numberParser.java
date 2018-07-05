@@ -1,4 +1,4 @@
-// Generated from output.g4 by ANTLR 4.7.1
+// Generated from number.g4 by ANTLR 4.7.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -9,24 +9,24 @@ import java.util.Iterator;
 import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class outputParser extends Parser {
+public class numberParser extends Parser {
 	static { RuntimeMetaData.checkVersion("4.7.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		TITLE=1, FILEPATH=2, NEWLINE=3;
+		NUMBER=1, WS=2;
 	public static final int
-		RULE_test = 0;
+		RULE_num = 0;
 	public static final String[] ruleNames = {
-		"test"
+		"num"
 	};
 
 	private static final String[] _LITERAL_NAMES = {
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
-		null, "TITLE", "FILEPATH", "NEWLINE"
+		null, "NUMBER", "WS"
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
@@ -62,7 +62,7 @@ public class outputParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "output.g4"; }
+	public String getGrammarFileName() { return "number.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -73,40 +73,50 @@ public class outputParser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public outputParser(TokenStream input) {
+	public numberParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
-	public static class TestContext extends ParserRuleContext {
-		public TerminalNode FILEPATH() { return getToken(outputParser.FILEPATH, 0); }
-		public TerminalNode NEWLINE() { return getToken(outputParser.NEWLINE, 0); }
-		public TerminalNode TITLE() { return getToken(outputParser.TITLE, 0); }
-		public TestContext(ParserRuleContext parent, int invokingState) {
+	public static class NumContext extends ParserRuleContext {
+		public List<TerminalNode> NUMBER() { return getTokens(numberParser.NUMBER); }
+		public TerminalNode NUMBER(int i) {
+			return getToken(numberParser.NUMBER, i);
+		}
+		public NumContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
-		@Override public int getRuleIndex() { return RULE_test; }
+		@Override public int getRuleIndex() { return RULE_num; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof outputListener ) ((outputListener)listener).enterTest(this);
+			if ( listener instanceof numberListener ) ((numberListener)listener).enterNum(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof outputListener ) ((outputListener)listener).exitTest(this);
+			if ( listener instanceof numberListener ) ((numberListener)listener).exitNum(this);
 		}
 	}
 
-	public final TestContext test() throws RecognitionException {
-		TestContext _localctx = new TestContext(_ctx, getState());
-		enterRule(_localctx, 0, RULE_test);
+	public final NumContext num() throws RecognitionException {
+		NumContext _localctx = new NumContext(_ctx, getState());
+		enterRule(_localctx, 0, RULE_num);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2);
-			match(FILEPATH);
-			setState(3);
-			match(NEWLINE);
-			setState(4);
-			match(TITLE);
+			setState(5);
+			_errHandler.sync(this);
+			_la = _input.LA(1);
+			while (_la==NUMBER) {
+				{
+				{
+				setState(2);
+				match(NUMBER);
+				}
+				}
+				setState(7);
+				_errHandler.sync(this);
+				_la = _input.LA(1);
+			}
 			}
 		}
 		catch (RecognitionException re) {
@@ -121,9 +131,10 @@ public class outputParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\5\t\4\2\t\2\3\2\3"+
-		"\2\3\2\3\2\3\2\2\2\3\2\2\2\2\7\2\4\3\2\2\2\4\5\7\4\2\2\5\6\7\5\2\2\6\7"+
-		"\7\3\2\2\7\3\3\2\2\2\2";
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\4\13\4\2\t\2\3\2"+
+		"\7\2\6\n\2\f\2\16\2\t\13\2\3\2\2\2\3\2\2\2\2\n\2\7\3\2\2\2\4\6\7\3\2\2"+
+		"\5\4\3\2\2\2\6\t\3\2\2\2\7\5\3\2\2\2\7\b\3\2\2\2\b\3\3\2\2\2\t\7\3\2\2"+
+		"\2\3\7";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

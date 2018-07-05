@@ -1077,6 +1077,16 @@ public interface HTTPListener extends ParseTreeListener {
 	 */
 	void exitUser_agent(HTTPParser.User_agentContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link HTTPParser#comment}.
+	 * @param ctx the parse tree
+	 */
+	void enterComment(HTTPParser.CommentContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#comment}.
+	 * @param ctx the parse tree
+	 */
+	void exitComment(HTTPParser.CommentContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link HTTPParser#product_version}.
 	 * @param ctx the parse tree
 	 */

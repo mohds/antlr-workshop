@@ -1299,6 +1299,18 @@ public class HTTPBaseListener implements HTTPListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterComment(HTTPParser.CommentContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitComment(HTTPParser.CommentContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterProduct_version(HTTPParser.Product_versionContext ctx) { }
 	/**
 	 * {@inheritDoc}

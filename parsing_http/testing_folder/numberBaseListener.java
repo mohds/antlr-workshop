@@ -1,27 +1,27 @@
-// Generated from output.g4 by ANTLR 4.7.1
+// Generated from number.g4 by ANTLR 4.7.1
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 /**
- * This class provides an empty implementation of {@link outputListener},
+ * This class provides an empty implementation of {@link numberListener},
  * which can be extended to create a listener which only needs to handle a subset
  * of the available methods.
  */
-public class outputBaseListener implements outputListener {
+public class numberBaseListener implements numberListener {
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTest(outputParser.TestContext ctx) { }
+	@Override public void enterNum(numberParser.NumContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTest(outputParser.TestContext ctx) { }
+	@Override public void exitNum(numberParser.NumContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
