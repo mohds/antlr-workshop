@@ -6,18 +6,25 @@ grammar HTTP;
 key 	: 'Cache-Control' | 'Connection' | 'Date' | 'Pragma' | 'Trailer' | 'Transfer-Encoding' | 'Upgrade' | 'Via' | 'Warning' | 'Accept' | 'Accept-Charset' | 'Accept-Encoding' | 'Accept-Language' | 'Authorization' | 'Expect' | 'From' | 'Host' | 'If-Match' | 'If-Modified-Since' | 'If-None-Match' | 'If-Range' | 'If-Unmodified-Since' | 'Max-Forwards' | 'Proxy-Authorization' | 'Range' | 'Referer' | 'TE' | 'User-Agent' | 'Allow' | 'Content-Encoding' | 'Content-Language' | 'Content-Length' | 'Content-Location' | 'Content-MD5' | 'Content-Range' | 'Content-Type' | 'Expires' | 'Last-Modified' ;
 
 // Ben's grammar separated the request from the reply grammar
-// I will join the request and reply into the same grammar
+// I will join the request and response into the same grammar
 http	: request
-//	| reply
+	| response 
 	;
 
+response: status_line new_line (header_message new_line)+ response_message_body?;
+
+response_message_body	:;
+
+status_line	: http_version status_code status_text;
+
+status_code	: NUMBER;
+
+status_text	: (~'\n')*?;
+
 // request_message in Ben's HTTP grammar
-request	: request_line new_line (header_message new_line)+ message_body;
+request	: request_line new_line (header_message new_line)+ message_body?;
 
 request_line	: method request_uri  http_version ;
-
-//reply	:
-//	;
 
 method	: 'OPTIONS' | 'GET' | 'POST' | 'HEAD' | 'PUT' | 'DELETE' | 'TRACE' | 'CONNECT';
 
