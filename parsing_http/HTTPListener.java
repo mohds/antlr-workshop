@@ -27,6 +27,56 @@ public interface HTTPListener extends ParseTreeListener {
 	 */
 	void exitHttp(HTTPParser.HttpContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link HTTPParser#response}.
+	 * @param ctx the parse tree
+	 */
+	void enterResponse(HTTPParser.ResponseContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#response}.
+	 * @param ctx the parse tree
+	 */
+	void exitResponse(HTTPParser.ResponseContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#response_message_body}.
+	 * @param ctx the parse tree
+	 */
+	void enterResponse_message_body(HTTPParser.Response_message_bodyContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#response_message_body}.
+	 * @param ctx the parse tree
+	 */
+	void exitResponse_message_body(HTTPParser.Response_message_bodyContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#status_line}.
+	 * @param ctx the parse tree
+	 */
+	void enterStatus_line(HTTPParser.Status_lineContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#status_line}.
+	 * @param ctx the parse tree
+	 */
+	void exitStatus_line(HTTPParser.Status_lineContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#status_code}.
+	 * @param ctx the parse tree
+	 */
+	void enterStatus_code(HTTPParser.Status_codeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#status_code}.
+	 * @param ctx the parse tree
+	 */
+	void exitStatus_code(HTTPParser.Status_codeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#status_text}.
+	 * @param ctx the parse tree
+	 */
+	void enterStatus_text(HTTPParser.Status_textContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#status_text}.
+	 * @param ctx the parse tree
+	 */
+	void exitStatus_text(HTTPParser.Status_textContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link HTTPParser#request}.
 	 * @param ctx the parse tree
 	 */
@@ -57,15 +107,25 @@ public interface HTTPListener extends ParseTreeListener {
 	 */
 	void exitMethod(HTTPParser.MethodContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link HTTPParser#request_uri}.
+	 * Enter a parse tree produced by {@link HTTPParser#uri}.
 	 * @param ctx the parse tree
 	 */
-	void enterRequest_uri(HTTPParser.Request_uriContext ctx);
+	void enterUri(HTTPParser.UriContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link HTTPParser#request_uri}.
+	 * Exit a parse tree produced by {@link HTTPParser#uri}.
 	 * @param ctx the parse tree
 	 */
-	void exitRequest_uri(HTTPParser.Request_uriContext ctx);
+	void exitUri(HTTPParser.UriContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#uri_text}.
+	 * @param ctx the parse tree
+	 */
+	void enterUri_text(HTTPParser.Uri_textContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#uri_text}.
+	 * @param ctx the parse tree
+	 */
+	void exitUri_text(HTTPParser.Uri_textContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link HTTPParser#http_version}.
 	 * @param ctx the parse tree
@@ -96,6 +156,116 @@ public interface HTTPListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitGeneral_header(HTTPParser.General_headerContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#set_cookie}.
+	 * @param ctx the parse tree
+	 */
+	void enterSet_cookie(HTTPParser.Set_cookieContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#set_cookie}.
+	 * @param ctx the parse tree
+	 */
+	void exitSet_cookie(HTTPParser.Set_cookieContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#cookie_entry}.
+	 * @param ctx the parse tree
+	 */
+	void enterCookie_entry(HTTPParser.Cookie_entryContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#cookie_entry}.
+	 * @param ctx the parse tree
+	 */
+	void exitCookie_entry(HTTPParser.Cookie_entryContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#cookie_definition}.
+	 * @param ctx the parse tree
+	 */
+	void enterCookie_definition(HTTPParser.Cookie_definitionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#cookie_definition}.
+	 * @param ctx the parse tree
+	 */
+	void exitCookie_definition(HTTPParser.Cookie_definitionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#cookie_name}.
+	 * @param ctx the parse tree
+	 */
+	void enterCookie_name(HTTPParser.Cookie_nameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#cookie_name}.
+	 * @param ctx the parse tree
+	 */
+	void exitCookie_name(HTTPParser.Cookie_nameContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#cookie_value}.
+	 * @param ctx the parse tree
+	 */
+	void enterCookie_value(HTTPParser.Cookie_valueContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#cookie_value}.
+	 * @param ctx the parse tree
+	 */
+	void exitCookie_value(HTTPParser.Cookie_valueContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#cookie_expiration}.
+	 * @param ctx the parse tree
+	 */
+	void enterCookie_expiration(HTTPParser.Cookie_expirationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#cookie_expiration}.
+	 * @param ctx the parse tree
+	 */
+	void exitCookie_expiration(HTTPParser.Cookie_expirationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#cookie_path}.
+	 * @param ctx the parse tree
+	 */
+	void enterCookie_path(HTTPParser.Cookie_pathContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#cookie_path}.
+	 * @param ctx the parse tree
+	 */
+	void exitCookie_path(HTTPParser.Cookie_pathContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#cookie_domain}.
+	 * @param ctx the parse tree
+	 */
+	void enterCookie_domain(HTTPParser.Cookie_domainContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#cookie_domain}.
+	 * @param ctx the parse tree
+	 */
+	void exitCookie_domain(HTTPParser.Cookie_domainContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#cookie_secure}.
+	 * @param ctx the parse tree
+	 */
+	void enterCookie_secure(HTTPParser.Cookie_secureContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#cookie_secure}.
+	 * @param ctx the parse tree
+	 */
+	void exitCookie_secure(HTTPParser.Cookie_secureContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#cookie_http_only}.
+	 * @param ctx the parse tree
+	 */
+	void enterCookie_http_only(HTTPParser.Cookie_http_onlyContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#cookie_http_only}.
+	 * @param ctx the parse tree
+	 */
+	void exitCookie_http_only(HTTPParser.Cookie_http_onlyContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#cookie_list}.
+	 * @param ctx the parse tree
+	 */
+	void enterCookie_list(HTTPParser.Cookie_listContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#cookie_list}.
+	 * @param ctx the parse tree
+	 */
+	void exitCookie_list(HTTPParser.Cookie_listContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link HTTPParser#cache_control}.
 	 * @param ctx the parse tree
@@ -217,6 +387,16 @@ public interface HTTPListener extends ParseTreeListener {
 	 */
 	void exitAsctime_date(HTTPParser.Asctime_dateContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link HTTPParser#cookie_date}.
+	 * @param ctx the parse tree
+	 */
+	void enterCookie_date(HTTPParser.Cookie_dateContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#cookie_date}.
+	 * @param ctx the parse tree
+	 */
+	void exitCookie_date(HTTPParser.Cookie_dateContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link HTTPParser#time}.
 	 * @param ctx the parse tree
 	 */
@@ -256,6 +436,26 @@ public interface HTTPListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDate3(HTTPParser.Date3Context ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#day}.
+	 * @param ctx the parse tree
+	 */
+	void enterDay(HTTPParser.DayContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#day}.
+	 * @param ctx the parse tree
+	 */
+	void exitDay(HTTPParser.DayContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#year}.
+	 * @param ctx the parse tree
+	 */
+	void enterYear(HTTPParser.YearContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#year}.
+	 * @param ctx the parse tree
+	 */
+	void exitYear(HTTPParser.YearContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link HTTPParser#weekday1}.
 	 * @param ctx the parse tree
@@ -1046,6 +1246,16 @@ public interface HTTPListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitReferer(HTTPParser.RefererContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#url}.
+	 * @param ctx the parse tree
+	 */
+	void enterUrl(HTTPParser.UrlContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#url}.
+	 * @param ctx the parse tree
+	 */
+	void exitUrl(HTTPParser.UrlContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link HTTPParser#te}.
 	 * @param ctx the parse tree

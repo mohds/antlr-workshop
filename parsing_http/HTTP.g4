@@ -3,17 +3,15 @@
 
 grammar HTTP;
 
-key 	: 'Cache-Control' | 'Connection' | 'Date' | 'Pragma' | 'Trailer' | 'Transfer-Encoding' | 'Upgrade' | 'Via' | 'Warning' | 'Accept' | 'Accept-Charset' | 'Accept-Encoding' | 'Accept-Language' | 'Authorization' | 'Expect' | 'From' | 'Host' | 'If-Match' | 'If-Modified-Since' | 'If-None-Match' | 'If-Range' | 'If-Unmodified-Since' | 'Max-Forwards' | 'Proxy-Authorization' | 'Range' | 'Referer' | 'TE' | 'User-Agent' | 'Allow' | 'Content-Encoding' | 'Content-Language' | 'Content-Length' | 'Content-Location' | 'Content-MD5' | 'Content-Range' | 'Content-Type' | 'Expires' | 'Last-Modified' ;
+key 	: 'Connection' | 'Date' | 'Pragma' | 'Trailer' | 'Transfer-Encoding' | 'Upgrade' | 'Via' | 'Warning' | 'Accept' | 'Accept-Charset' | 'Accept-Encoding' | 'Accept-Language' | 'Authorization' | 'Expect' | 'From' | 'Host' | 'If-Match' | 'If-Modified-Since' | 'If-None-Match' | 'If-Range' | 'If-Unmodified-Since' | 'Max-Forwards' | 'Proxy-Authorization' | 'Range' | 'Referer' | 'TE' | 'User-Agent' | 'Allow' | 'Content-Encoding' | 'Content-Language' | 'Content-Length' | 'Content-Location' | 'Content-MD5' | 'Content-Range' | 'Content-Type' | 'Expires' | 'Last-Modified' | 'Location' | 'Server' | 'X-Powered-By' | ID;
 
 // Ben's grammar separated the request from the reply grammar
 // I will join the request and response into the same grammar
-http	: request
-	| response 
-	;
+http	: (request | response | new_line)*;
 
-response: status_line new_line (header_message new_line)+ response_message_body?;
+response: status_line new_line (header_message new_line)+  response_message_body?;
 
-response_message_body	:;
+response_message_body	: .*?;
 
 status_line	: http_version status_code status_text;
 
@@ -22,13 +20,15 @@ status_code	: NUMBER;
 status_text	: (~'\n')*?;
 
 // request_message in Ben's HTTP grammar
-request	: request_line new_line (header_message new_line)+ message_body?;
+request	: request_line new_line (header_message new_line)+; // message_body?;
 
-request_line	: method request_uri  http_version ;
+request_line	: method uri  http_version ;
 
 method	: 'OPTIONS' | 'GET' | 'POST' | 'HEAD' | 'PUT' | 'DELETE' | 'TRACE' | 'CONNECT';
 
-request_uri	: '/' (ID ('.' ID)? '/'?)*  ;
+uri	: '/' (uri_text '/'?)*  ;
+
+uri_text: ('http' | 'https' | ID | '%' | '.' | '-' | '_' | '=' | '&' | '?' | NUMBER | '1')+;
 
 http_version	: 'HTTP/1.0' | 'HTTP/1.1';
 
@@ -46,12 +46,39 @@ general_header	: cache_control
 		| upgrade
 		| via
 		| warning
+		| set_cookie
+		| cookie_list
 		;
+
+set_cookie	: 'Set-Cookie' ':' cookie_entry (';' cookie_entry)*;
+cookie_entry	: cookie_definition
+		| cookie_expiration
+		| cookie_path
+		| cookie_domain
+		| cookie_secure
+		| cookie_http_only
+		;
+
+cookie_definition	: cookie_name '=' cookie_value;
+cookie_name	: ID;
+cookie_value	: ('1' | NUMBER | ID)+; // 1 is a hack, it is being parsed as an independant token and not NUMBER
+
+cookie_expiration	: 'expires' '=' http_date;
+
+cookie_path	: 'path' '=' uri;
+
+cookie_domain	: 'domain' '=' '.'? ID ('.' ID)*;
+
+cookie_secure	: 'Secure';
+
+cookie_http_only: 'HttpOnly';
+
+cookie_list	: 'Cookie' ':' cookie_definition (';' cookie_definition)*;
 
 cache_control	: 'Cache-Control' ':' cache_request (',' cache_request)*;
 
 // cache_request_directive in Ben's grammar
-cache_request	: 'no-cache'
+cache_request	: 'no-cache' ('=' 'Set-Cookie')? // hack
 		| 'no-store'
 		| 'max-age' '=' delta_seconds
 		| 'max-stale' (stale_time)?
@@ -59,6 +86,8 @@ cache_request	: 'no-cache'
 		| 'no-transform'
 		| 'only-if-cached'
 		| cache_extension 
+		| 'post-check' '=' NUMBER
+		| 'pre-check' '=' NUMBER
 		;
 
 delta_seconds	: NUMBER;
@@ -75,7 +104,8 @@ date	: 'Date' ':' http_date;
 
 http_date	: rfc1123_date
 		| rfc850_date
-		| asctime_date 
+		| asctime_date
+		| cookie_date 
 		;
 
 rfc1123_date	: weekday1 ',' date1 time 'GMT';
@@ -84,13 +114,18 @@ rfc850_date	: weekday2 ',' date2 time 'GMT';
 
 asctime_date	: weekday1 ',' date3 time NUMBER;
 
-time	: NUMBER;
+cookie_date	: weekday1 ',' date2 time 'GMT';
 
-date1	: NUMBER month NUMBER;
+time	: NUMBER ':' NUMBER ':' NUMBER;
 
-date2	: NUMBER '-' month '-' NUMBER;
+date1	: day month year;
+
+date2	: day '-' (month '-' year | ID);
 
 date3	: month NUMBER;
+
+day	: NUMBER;
+year	: NUMBER;
 
 weekday1: 'Mon' | 'Tue' | 'Wed' | 'Thu' | 'Fri' | 'Sat' | 'Sun';
 
@@ -304,7 +339,9 @@ suffix_byte_range_spec	: '-' suffix_length;
 
 suffix_length	: NUMBER;
 
-referer	: 'Referer' ':' ID ; // ID should be TEXT
+referer	: 'Referer' ':' url  ; 
+
+url	: ('http' | 'https') ':' '//' (uri_text '/'?)+;
 
 te	: 'TE' ':' t_coding (',' t_coding)*;
 
@@ -314,9 +351,9 @@ t_coding: trailer
 
 user_agent	: 'User-Agent' ':' product '/' product_version comment ;
 
-comment	: (~'\n')*? ;
+comment	: (~'\n' | '(' | ')')*? ;
 
-product_version	: NUMBER ('.' NUMBER)* ; // FIX THIS
+product_version	: NUMBER ('.' (NUMBER | '0' | '1'))* ; // FIX THIS
 
 // comment	: (':' | ';' | ')' | '(' | '/' | '-' | ID | '.' | '*' | ',')*; // improve this
 
@@ -354,7 +391,7 @@ content_type	: 'Content-Type' ':' mime_value;
 
 mime_value	: (not_eol)+;
 
-not_eol	: ~'\n' token_or_key ;
+not_eol	: ~'\n'; // token_or_key ;
 
 token_or_key	: token | key;
 
@@ -364,7 +401,7 @@ expires: 'Expires' ':' http_date;
 
 last_modified	: 'Last-Modified' ':' http_date;
 
-extension_header: key ':' mime_value;
+extension_header: key ':' mime_value?;
 
 message_body	: (token_or_key)*
 		;
@@ -380,3 +417,4 @@ fragment HEX	: [0-9a-fA-F];
 NUMBER	: [0-9]+;
 
 WS	: [ \t\r]+ -> skip;
+//ErrorCharacter	: . ;

@@ -1,0 +1,323 @@
+GET /akam/10/c28959e HTTP/1.1
+Host: www.cbc.ca
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: */*
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cbc.ca/
+Cookie: ak_bmsc=8DBDE60569F1918A9BCBBCC2B1F66EDB426E640684100000A24A3E5B199BC713~plv1xYEGXf1KKo291F7O2Jo44V5Q6A/G3gw4yVGc91fdraprNeLj99mn63FoeE7PDVBYu1SlkiV9T2C4gmiVMn/qR5gM+N+fFdNFEsreM4ieuKwXbGxM3utAE+8eqETfDuHCXjFjUnM4RV4LjoJlhGgOK8tIG7zBkNbzyARcyaik+f0TbZANqGZOrTIaroXK85tGbp/TK4gKqnxYWoQGCld7kZELfTRPTZyMT5G8gCEjVP+y/QH1BPelTGV7pfZYZH; akacd_akcx=2177452799~rv=3~id=68e8be558b4ff3fdfd87d1d8ad27051b; akaas_feed=2147483647~rv=45~id=1d6fc114bb55b1bb5f80605f96e28d6d; AMCV_951720B3535680CB0A490D45%40AdobeOrg=-894706358%7CMCIDTS%7C17718%7CMCMID%7C39957149381818755601513235744938543505%7CMCAAMLH-1531413795%7C7%7CMCAAMB-1531413795%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1530816196s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-17725%7CvVersion%7C2.3.0; AMCVS_951720B3535680CB0A490D45%40AdobeOrg=1; _vfb=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.5.10.1530808996.true.00000000-0000-4000-8000-09f1839ef3d2; _vfz=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.1530808996.1.medium=referral|source=https%253A%252F%252Fwww%2Egoogle%2Ecom%252F|terms=; _vfa=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.5ed2bd2c-cc65-414d-979e-cb131bac4c31.1530808996.1530808996.1530808996.1; _vff=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.62f8bb25f4e266f64436d48e48a2ca08.; s_cc=true; cbc-session=bac46271-d802-6dbb-0e55-5541cf93ac33; bm_sv=30E9571D2D6795A1F5A6B836366E7BD1~UkWX3pAx6yc+ANZGlH/GouEMUHKtgLqpnkDDEfmRhyvUR0xf3TJhqsvJUP4eu4onwHLTwiEsp+3s4RjkpWNtz3N/0BjRO0fjATHvq0iYpxuQ0GnmPb6XI0PZ2aLtR7IV/5qiu2hA8PhRbqwdqYHOSLXfWLVDArnFLaP5PvYlO5g=; cbc_visitor=ead6bff5-8d0f-4e08-9bdc-bbabc114ee86; amplitude_id_statswww.cbc.ca=eyJkZXZpY2VJZCI6IjcyZjE4YzNkLWEwNjYtNDQ1OC05YjM4LTAzOTZlY2RiODhkMFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTUzMDgwODk5ODY2MSwibGFzdEV2ZW50VGltZSI6MTUzMDgwOTAwNjkwMCwiZXZlbnRJZCI6NSwiaWRlbnRpZnlJZCI6OCwic2VxdWVuY2VOdW1iZXIiOjEzfQ==; cX_S=jj8s5ixtanm7bbco; cX_P=jj8s5ixujmryydwv; _cb_ls=1; _cb=Bz00F8DgkdVPDPsBm9; _chartbeat2=.1530808998746.1530809009162.1.DnfECY-TixHC5Ux-H9zvM7DADH93.3; _cb_svref=https%3A%2F%2Fwww.google.com%2F; RT="sl=2&ss=1530808994105&tt=12285&obo=0&bcn=%2F%2F17d98a5d.akstat.io%2F&sh=1530809011839%3D2%3A0%3A12285%2C1530809000934%3D1%3A0%3A5749&dm=cbc.ca&si=ab6bbb48-904b-46c4-81b2-f747a978c3f4&ld=1530809011839"; _chartbeat5=110,13,http%3A%2F%2Fwww.cbc.ca%2F,http%3A%2F%2Fwww.cbc.ca%2Fsitemap,DgCgXLDyMqzPD36EpEDT-mZABiTOV-,,c,BWAqGRuCNnKCcwHcvCKyj1CB5jfPV,cbc.ca,; s_sq=cbc-production%3D%2526pid%253Dhttps%25253A%25252F%25252Fwww.cbc.ca%25252Fmeta%25252Fglobal%25252Fheader%2526oid%253Dhttp%25253A%25252F%25252Fwww.cbc.ca%25252F%2526ot%253DA; SC_LINKS=%5B%5BB%5D%5D; amplitudeDeviceID=72f18c3d-a066-4458-9b38-0396ecdb88d0R; ACE-COOKIE=R1709209244
+Connection: keep-alive
+
+HTTP/1.1 404 Not Found
+Content-Type: text/html
+Content-Length: 9
+Date: Thu, 05 Jul 2018 16:43:41 GMT
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=HIT;
+Server-Timing: edge; dur=0;
+
+Not FoundGET /akam/10/c28959e HTTP/1.1
+Host: www.cbc.ca
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: */*
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cbc.ca/
+Cookie: ak_bmsc=8DBDE60569F1918A9BCBBCC2B1F66EDB426E640684100000A24A3E5B199BC713~plv1xYEGXf1KKo291F7O2Jo44V5Q6A/G3gw4yVGc91fdraprNeLj99mn63FoeE7PDVBYu1SlkiV9T2C4gmiVMn/qR5gM+N+fFdNFEsreM4ieuKwXbGxM3utAE+8eqETfDuHCXjFjUnM4RV4LjoJlhGgOK8tIG7zBkNbzyARcyaik+f0TbZANqGZOrTIaroXK85tGbp/TK4gKqnxYWoQGCld7kZELfTRPTZyMT5G8gCEjVP+y/QH1BPelTGV7pfZYZH; akacd_akcx=2177452799~rv=3~id=68e8be558b4ff3fdfd87d1d8ad27051b; akaas_feed=2147483647~rv=45~id=1d6fc114bb55b1bb5f80605f96e28d6d; AMCV_951720B3535680CB0A490D45%40AdobeOrg=-894706358%7CMCIDTS%7C17718%7CMCMID%7C39957149381818755601513235744938543505%7CMCAAMLH-1531413795%7C7%7CMCAAMB-1531413795%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1530816196s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-17725%7CvVersion%7C2.3.0; AMCVS_951720B3535680CB0A490D45%40AdobeOrg=1; _vfb=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.5.10.1530808996.true.00000000-0000-4000-8000-09f1839ef3d2; _vfz=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.1530808996.1.medium=referral|source=https%253A%252F%252Fwww%2Egoogle%2Ecom%252F|terms=; _vfa=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.5ed2bd2c-cc65-414d-979e-cb131bac4c31.1530808996.1530808996.1530808996.1; _vff=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.62f8bb25f4e266f64436d48e48a2ca08.; s_cc=true; cbc-session=bac46271-d802-6dbb-0e55-5541cf93ac33; bm_sv=30E9571D2D6795A1F5A6B836366E7BD1~UkWX3pAx6yc+ANZGlH/GouEMUHKtgLqpnkDDEfmRhyvUR0xf3TJhqsvJUP4eu4onwHLTwiEsp+3s4RjkpWNtz3N/0BjRO0fjATHvq0iYpxuQ0GnmPb6XI0PZ2aLtR7IV/5qiu2hA8PhRbqwdqYHOSLXfWLVDArnFLaP5PvYlO5g=; cbc_visitor=ead6bff5-8d0f-4e08-9bdc-bbabc114ee86; amplitude_id_statswww.cbc.ca=eyJkZXZpY2VJZCI6IjcyZjE4YzNkLWEwNjYtNDQ1OC05YjM4LTAzOTZlY2RiODhkMFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTUzMDgwODk5ODY2MSwibGFzdEV2ZW50VGltZSI6MTUzMDgwOTAwNjkwMCwiZXZlbnRJZCI6NSwiaWRlbnRpZnlJZCI6OCwic2VxdWVuY2VOdW1iZXIiOjEzfQ==; cX_S=jj8s5ixtanm7bbco; cX_P=jj8s5ixujmryydwv; _cb_ls=1; _cb=Bz00F8DgkdVPDPsBm9; _chartbeat2=.1530808998746.1530809009162.1.DnfECY-TixHC5Ux-H9zvM7DADH93.3; _cb_svref=https%3A%2F%2Fwww.google.com%2F; RT="sl=2&ss=1530808994105&tt=12285&obo=0&bcn=%2F%2F17d98a5d.akstat.io%2F&sh=1530809011839%3D2%3A0%3A12285%2C1530809000934%3D1%3A0%3A5749&dm=cbc.ca&si=ab6bbb48-904b-46c4-81b2-f747a978c3f4&ld=1530809011839"; _chartbeat5=110,13,http%3A%2F%2Fwww.cbc.ca%2F,http%3A%2F%2Fwww.cbc.ca%2Fsitemap,DgCgXLDyMqzPD36EpEDT-mZABiTOV-,,c,BWAqGRuCNnKCcwHcvCKyj1CB5jfPV,cbc.ca,; s_sq=cbc-production%3D%2526pid%253Dhttps%25253A%25252F%25252Fwww.cbc.ca%25252Fmeta%25252Fglobal%25252Fheader%2526oid%253Dhttp%25253A%25252F%25252Fwww.cbc.ca%25252F%2526ot%253DA; SC_LINKS=%5B%5BB%5D%5D; amplitudeDeviceID=72f18c3d-a066-4458-9b38-0396ecdb88d0R; ACE-COOKIE=R1709209244
+Connection: keep-alive
+
+HTTP/1.1 404 Not Found
+Content-Type: text/html
+Content-Length: 9
+Date: Thu, 05 Jul 2018 16:43:41 GMT
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=HIT;
+Server-Timing: edge; dur=0;
+
+Not FoundGET /g/stats/comscore.json?cache=1530809023733 HTTP/1.1
+Host: www.cbc.ca
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: */*
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cbc.ca/
+Cookie: ak_bmsc=8DBDE60569F1918A9BCBBCC2B1F66EDB426E640684100000A24A3E5B199BC713~plv1xYEGXf1KKo291F7O2Jo44V5Q6A/G3gw4yVGc91fdraprNeLj99mn63FoeE7PDVBYu1SlkiV9T2C4gmiVMn/qR5gM+N+fFdNFEsreM4ieuKwXbGxM3utAE+8eqETfDuHCXjFjUnM4RV4LjoJlhGgOK8tIG7zBkNbzyARcyaik+f0TbZANqGZOrTIaroXK85tGbp/TK4gKqnxYWoQGCld7kZELfTRPTZyMT5G8gCEjVP+y/QH1BPelTGV7pfZYZH; akacd_akcx=2177452799~rv=3~id=68e8be558b4ff3fdfd87d1d8ad27051b; akaas_feed=2147483647~rv=45~id=1d6fc114bb55b1bb5f80605f96e28d6d; AMCV_951720B3535680CB0A490D45%40AdobeOrg=-894706358%7CMCIDTS%7C17718%7CMCMID%7C39957149381818755601513235744938543505%7CMCAAMLH-1531413795%7C7%7CMCAAMB-1531413795%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1530816196s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-17725%7CvVersion%7C2.3.0; AMCVS_951720B3535680CB0A490D45%40AdobeOrg=1; _vfb=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.5.10.1530808996.true.00000000-0000-4000-8000-09f1839ef3d2; _vfz=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.1530808996.1.medium=referral|source=https%253A%252F%252Fwww%2Egoogle%2Ecom%252F|terms=; _vfa=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.5ed2bd2c-cc65-414d-979e-cb131bac4c31.1530808996.1530808996.1530808996.1; _vff=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.62f8bb25f4e266f64436d48e48a2ca08.; s_cc=true; cbc-session=bac46271-d802-6dbb-0e55-5541cf93ac33; bm_sv=30E9571D2D6795A1F5A6B836366E7BD1~UkWX3pAx6yc+ANZGlH/GouEMUHKtgLqpnkDDEfmRhyvUR0xf3TJhqsvJUP4eu4onwHLTwiEsp+3s4RjkpWNtz3N/0BjRO0fjATHvq0iYpxuQ0GnmPb6XI0PZ2aLtR7IV/5qiu2hA8PhRbqwdqYHOSLXfWLVDArnFLaP5PvYlO5g=; cbc_visitor=ead6bff5-8d0f-4e08-9bdc-bbabc114ee86; amplitude_id_statswww.cbc.ca=eyJkZXZpY2VJZCI6IjcyZjE4YzNkLWEwNjYtNDQ1OC05YjM4LTAzOTZlY2RiODhkMFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTUzMDgwODk5ODY2MSwibGFzdEV2ZW50VGltZSI6MTUzMDgwOTAwNjkwMCwiZXZlbnRJZCI6NSwiaWRlbnRpZnlJZCI6OCwic2VxdWVuY2VOdW1iZXIiOjEzfQ==; cX_S=jj8s5ixtanm7bbco; cX_P=jj8s5ixujmryydwv; _cb_ls=1; _cb=Bz00F8DgkdVPDPsBm9; _chartbeat2=.1530808998746.1530809009162.1.DnfECY-TixHC5Ux-H9zvM7DADH93.3; _cb_svref=https%3A%2F%2Fwww.google.com%2F; RT="sl=2&ss=1530808994105&tt=12285&obo=0&bcn=%2F%2F17d98a5d.akstat.io%2F&sh=1530809011839%3D2%3A0%3A12285%2C1530809000934%3D1%3A0%3A5749&dm=cbc.ca&si=ab6bbb48-904b-46c4-81b2-f747a978c3f4"; _chartbeat5=110,13,http%3A%2F%2Fwww.cbc.ca%2F,http%3A%2F%2Fwww.cbc.ca%2Fsitemap,DgCgXLDyMqzPD36EpEDT-mZABiTOV-,,c,BWAqGRuCNnKCcwHcvCKyj1CB5jfPV,cbc.ca,; s_sq=%5B%5BB%5D%5D; SC_LINKS=%5B%5BB%5D%5D; amplitudeDeviceID=72f18c3d-a066-4458-9b38-0396ecdb88d0R; ACE-COOKIE=R1709209244
+Connection: keep-alive
+
+HTTP/1.1 200 OK
+Server: Apache/2.2.15 (Red Hat)
+Content-Length: 41
+Content-Type: application/json
+Set-Cookie: bm_sv=30E9571D2D6795A1F5A6B836366E7BD1~UkWX3pAx6yc+ANZGlH/GouEMUHKtgLqpnkDDEfmRhyvUR0xf3TJhqsvJUP4eu4onwHLTwiEsp+3s4RjkpWNtz3N/0BjRO0fjATHvq0iYpxtj+dR/zgosVLKh9ma68eL1LbUUgtdIvXjk9o847DabeFBPQWy5bw3dkVCLO4IkvVk=; Domain=.www.cbc.ca; Path=/; Max-Age=7175; HttpOnly
+Access-Control-Allow-Origin: *
+Server-Timing: edge; dur=32;
+Vary: Accept-Encoding
+Server-Timing: origin; dur=18;, cdn-cache; desc=MISS;
+X-Origin-Server: static05_cache04
+Cache-Control: max-age=288
+Date: Thu, 05 Jul 2018 16:43:43 GMT
+Connection: keep-alive
+Set-Cookie: bm_sv=30E9571D2D6795A1F5A6B836366E7BD1~UkWX3pAx6yc+ANZGlH/GouEMUHKtgLqpnkDDEfmRhyvUR0xf3TJhqsvJUP4eu4onwHLTwiEsp+3s4RjkpWNtz3N/0BjRO0fjATHvq0iYpxvM4fehbn8mES+4cLvLiF4TClKLiXdQ30/E6+a59pC5EneAs/s8uoZO0GDCJauNVJs=; Domain=.www.cbc.ca; Path=/; Max-Age=7175; HttpOnly
+
+{
+    "comscore": "pageview_candidate"
+}
+GET /documentaries HTTP/1.1
+Host: www.cbc.ca
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: ak_bmsc=8DBDE60569F1918A9BCBBCC2B1F66EDB426E640684100000A24A3E5B199BC713~plv1xYEGXf1KKo291F7O2Jo44V5Q6A/G3gw4yVGc91fdraprNeLj99mn63FoeE7PDVBYu1SlkiV9T2C4gmiVMn/qR5gM+N+fFdNFEsreM4ieuKwXbGxM3utAE+8eqETfDuHCXjFjUnM4RV4LjoJlhGgOK8tIG7zBkNbzyARcyaik+f0TbZANqGZOrTIaroXK85tGbp/TK4gKqnxYWoQGCld7kZELfTRPTZyMT5G8gCEjVP+y/QH1BPelTGV7pfZYZH; akacd_akcx=2177452799~rv=3~id=68e8be558b4ff3fdfd87d1d8ad27051b; akaas_feed=2147483647~rv=83~id=d4cc29b7b30b756e4b0da7cef61f3158; AMCV_951720B3535680CB0A490D45%40AdobeOrg=-894706358%7CMCIDTS%7C17718%7CMCMID%7C39957149381818755601513235744938543505%7CMCAAMLH-1531413795%7C7%7CMCAAMB-1531413795%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1530816196s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-17725%7CvVersion%7C2.3.0; AMCVS_951720B3535680CB0A490D45%40AdobeOrg=1; _vfb=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.9.10.1530808996.true.00000000-0000-4000-8000-09f1839ef3d2; _vfz=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.1530808996.1.medium=referral|source=https%253A%252F%252Fwww%2Egoogle%2Ecom%252F|terms=; _vfa=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.5ed2bd2c-cc65-414d-979e-cb131bac4c31.1530808996.1530808996.1530808996.1; _vff=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.62f8bb25f4e266f64436d48e48a2ca08.; s_cc=true; cbc-session=bac46271-d802-6dbb-0e55-5541cf93ac33; bm_sv=30E9571D2D6795A1F5A6B836366E7BD1~UkWX3pAx6yc+ANZGlH/GouEMUHKtgLqpnkDDEfmRhyvUR0xf3TJhqsvJUP4eu4onwHLTwiEsp+3s4RjkpWNtz3N/0BjRO0fjATHvq0iYpxt7xh2EnKTAazzM9FhFfjBaYioosu8wtbGbOZLrZc9ObTL8pAeNtmJ+IdLlIjFJhEs=; cbc_visitor=ead6bff5-8d0f-4e08-9bdc-bbabc114ee86; amplitude_id_statswww.cbc.ca=eyJkZXZpY2VJZCI6IjcyZjE4YzNkLWEwNjYtNDQ1OC05YjM4LTAzOTZlY2RiODhkMFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTUzMDgwODk5ODY2MSwibGFzdEV2ZW50VGltZSI6MTUzMDgwOTAzMzY3MiwiZXZlbnRJZCI6OCwiaWRlbnRpZnlJZCI6MTQsInNlcXVlbmNlTnVtYmVyIjoyMn0=; cX_S=jj8s5ixtanm7bbco; cX_P=jj8s5ixujmryydwv; _cb_ls=1; _cb=Bz00F8DgkdVPDPsBm9; _chartbeat2=.1530808998746.1530809026806.1.DnfECY-TixHC5Ux-H9zvM7DADH93.4; _cb_svref=https%3A%2F%2Fwww.google.com%2F; RT="sl=5&ss=1530808994105&tt=21391&obo=2&bcn=%2F%2F17d98a5d.akstat.io%2F&sh=1530809034612%3D5%3A2%3A21391%2C1530809024227%3D4%3A2%3A12285%2C1530809024215%3D3%3A1%3A12285%2C1530809011839%3D2%3A0%3A12285%2C1530809000934%3D1%3A0%3A5749&dm=cbc.ca&si=ab6bbb48-904b-46c4-81b2-f747a978c3f4&ld=1530809034612&r=https%3A%2F%2Fwww.cbc.ca%2Fnews%2Fthenational%2Ftrapped-thai-soccer-team-faces-complex-rescue-1.4734711&ul=1530809037187"; _chartbeat5=110,13,http%3A%2F%2Fwww.cbc.ca%2F,http%3A%2F%2Fwww.cbc.ca%2Fsitemap,DgCgXLDyMqzPD36EpEDT-mZABiTOV-,,c,BWAqGRuCNnKCcwHcvCKyj1CB5jfPV,cbc.ca,; s_sq=%5B%5BB%5D%5D; SC_LINKS=%5B%5BB%5D%5D; amplitudeDeviceID=72f18c3d-a066-4458-9b38-0396ecdb88d0R; ACE-COOKIE=R1709209244; avcaff_volume=null; avcaff_captions=null; avcaff_autodockdisable=null; cbcvideoheartbeatplayer=1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: text/html; charset=utf-8
+x-cloud-trace-context: 28ba236f2dd866eb71e9543085bcdf05/2169139825118735174;o=0
+X-Origin-Server: ocelot-blue-db7fdf5c8-lv62s__active_cache
+Accept-Ranges: bytes
+Content-Encoding: gzip
+Server-Timing: origin; dur=234;, cdn-cache; desc=REVALIDATE;
+X-Akamai-Transformed: 9 19609 0 pmb=mRUM,2
+Cache-Control: private, max-age=60
+Expires: Thu, 05 Jul 2018 16:44:58 GMT
+Date: Thu, 05 Jul 2018 16:43:58 GMT
+Content-Length: 20884
+Connection: keep-alive
+Vary: Accept-Encoding
+Server-Timing: edge; dur=475;
+Set-Cookie: bm_sv=30E9571D2D6795A1F5A6B836366E7BD1~UkWX3pAx6yc+ANZGlH/GouEMUHKtgLqpnkDDEfmRhyvUR0xf3TJhqsvJUP4eu4onwHLTwiEsp+3s4RjkpWNtz3N/0BjRO0fjATHvq0iYpxvgSu7WR8sPOVkdxrRvaU9YGU01aWI7l4sYFqKHJsVU45iG1A7BtmyiL0dSnbVTXsk=; Domain=.www.cbc.ca; Path=/; Max-Age=7160; HttpOnly
+
+�      ���r�H�.����+�ێE����-Ζd���V[r{����I�@ ���G�C�{G�� �5Σ���̪P�DR�-�x.2X(Tefe}��u���y���7Gg��<#�|���Hǟ$��h�ŢV�B�dԯ'��<�CF|�S%e�˕1',�o�锵�G�G�i�M',�i��<��O���(��4���i>Tz-�]�1��ߺ�,�ӼE�8ʡ���,�����.�)�G�Q�4T2��l_k.6���p�5�Q0d�:N�p�ե�"��kG7}O�$dJO��x�Q���N�n*N��`8���~X.vH/yi����D9��w�,�|����e�du�^�H3�7��yi���R��T��H�zPv��Lɘ�	"�}��:^<���n��zz���t�65Mu�/����e�bc��	�=�Q ]�7��d�۝a���Ѯ_��Vk+tne�I',����x��9;G��(%��g�R����9����,�v�t����m�g؆��\xv!�2t�g;���mKż�	yۺ����8FOwu�jۆ
+Ei�jX����{��3M�vM�m�&e��a���k���ن��F��醩��j��Ҡf���m
+U]��*T�lC.�vm�p]U݄i�4+,��p���a��$Kдa��+.�����t��0a�Ϻ"U��h�Fq:��g]�������E,<�	���3�eD��5���#Q�>����8#�x��0NI�fY��$�`ݿ�M�?o�_\>��L��k�8FADC�1^�:I�I��Ά��1"s�t��;ݴ���`W��1���xЌ�(���0dI�ɏ���&o/�~��������E;6N��{����I�㿙�Iz>�%^��|�9K9hTj�_	��`������F����A�v	��,G���դ�-ĤV����=f ">�s��y�G�_�'��G��w�Jk������;���.�w����e8h }�w8Ւ������3�~g��IzO}<f�h��� N}01��~�%!����^)�PYbv8?���P�Ö����_mG$x�F>pa��9�<��ޣ�88��~G�E���qP=(��ctY�Ҁ����0:����߷�5������Ѐ�k*N����p�2����A��Ϩ�#�C�<���*{�C�fМ���_['?[?���{e�ʳ��������w�P���@o	�830������ͫ�������q� �O��3K��|�z2�[���?'rLl-dt��Z��Af/��r��Z{�*(��`5A�Mh��XT���SIk�j9:�߲,��҃ht8Yz|d���)�[��ϭ|�=鰀�c��ѼXt���J_lJĂ
+�Ca��^h��w�+���7H3��*	8�v����<���Ӓ���{5���x!Ͳ�֐AQ��5�}2VPΞƓV_�w~���˳����gg���� �������1�Yϟ>�[����$�����Dx� K g�����=wM��U>غ�.����"K��s�_�6Z>��9�T�9�h8��U��!�٘�
+dNɳ9k�W{�� ��/}����,>R~��i>�S��Gv�8/|*x��Y8����G�'Gs����Tk��vkR��q�@5����r69C�u�����` dO��9UU���[����R T$�$� `3��B�����ƒ�Z�Z�tK��̱��Z��|'^���Ē�O,������5a0C$��\��sY�ě���K* Ise�1z��X�@�`Y����[���/0
+�P�T�!Z@�-^r�P���H�zD@̒)۲TP���[O��'q'q8GVjO���q�<�vxy؞��|��:�{\�ѵ&8���C�Ӕ��,� /_v��1K׷$sF��,���������ƒ��x�����h���'�)��])3�xa0��� �@B	�� bd0�Om2���OY8'�gY�~}x�hB��hf9��",k9S�0�&��_e�D�+�h����~j�C(zM��Plٚ`�ϔx���������9yV y�M#4��!�b/`9*��k�$��Ҍ��P��?K#�e�u�h��	>��಩'L�e&���L�r4�L���l���������P�.�ٮa�κ��YѮ`�.*�]�v�� � ~	u[sSU{��$n�	u\<Fɷ	YF�i���;�
+dh��8���2�����R�V�(��:�(`z�� o��*��ҡ�Z�04'G �k�U�+�+�Z���8�=T�C���4�ƈ���Ż�V�S�X�H��D)# JIQ�R�6*7���vG���dQ<S�i<Q(�8��&K�uk}��,���f-��*`��ƫM-A�SKv��M�m�{����z0&�)BB�r�b�NO�.�B$gt�`�>$a�"|�3�&8����`�h����?~�����f��8��`����_Aj�fh�4����J%J�A"�p�7M3�ΡJ��dB��h9r/���J k����Nor��]���03v��,��Av�C	�ulF~��ʍ&�jкVq2KM�?�H���,l�́����M�J���ٺik�AUA1��Jr��UEo$��6�������d���� ��f\�K��+���ų!.mٴuX:�Ј$4 ѥ$��3�.Y:��� ���x,8�>�Y�Al/��%�^��CV�@��ܻΏ���n)�_M�t�ЄS<��2��
+�U���4�:>��[�PH~A=�d;�_IR��礚���a��mX����ke�Xx� �L����T]km\����`ێSÅ�Zr�+$)j���m�e��!���S\��GIʰ��A��H�����H6����M��`#B���p��32�@�!�v�0����p��T��L�c9#�_�Z �lʧͥS����C��E��!�?�'�Z�����Kh��i��&��s���bl���٘&�!r��ʭƭS��:|=d�=���#�� =fA���+�|�����W�Pr �MA��&���[�>�3�;B�e��~oyȌ�k�<�ї o�r�ɴ]C�E�|��SGO�w����(f�;� �f�9�YA}��������;�ݸQ
+�'�I�?~���9�-��f����k@�7�$���K'�l�2r C��/#�x�~������p�xjx�p��f^ �c8j(| �ǩ�i�Jr����+�ڨ��%��H�P�_��2�d
+N��Y<aJF�ʌ���[D�{���p����]��Lg�Wh�!O�,]?&&��~L��WXw�]��;ԫ�Ar�M:��1~N5�:�2�!���(�ǐy$%FD�&�iH^�9��1�;��p��e�`!
+��3���a��i {`�B����hu�S Q�!�j=WEL]��� �����< ?��Mwr��9�5�~F�br@^0B�,msmK�8�)P6M�Ե�*#���{��H���
+U��\}�A톈سl�AD�Ww̻�wɹ�����ښ�6�!MxD���n�+!M��izocH���c��;E>:�y1+(�L�?��[�LH�����|�@iN��)b@l����}���0䒗�I�Fq�G�'f��x�爖�4�����*1	��Dn�I�=��qORw5ǲ�\rR.X�F��2�C\���O'��!]۷t,W[߷D��`�U����z-��{��]��57��6n�:�����A��{���M6B1×��%2�� �spQ(I�8�;�9�-N�<����ʐ7�!@7@��%��	�;�Qo�E
+o�i��J�����8��_W�a�v������fL�� xA	a����Å�E�/
+�*T����g^���w��en_���D�Ǥn��5��َѫ��ݩԵޟ��T2�[{�V�+_������n_ŗUM�����aCs�/&_�g���i�� �a�	sj�}9��� I07�J,���5�? {��%\�G�����A��q�"E9�B�I?�3W*�a`RP�x�ʥ�V��P�YA����N��T݄�uW<��I�N@�!�Z�����4���֖�+l���+A�XB�v���Z�&11���Nz��@��A4�)C�N� �_���Q��Y��S4]&&5x���d`IT�����7�nc���N� �N:(yy�%���9|��QdH}H�� P��i8E�-`��w5b"tFv1�<W"����p�U��͗��O�N�=;=�����0��-q ہ��_��|�P$���C����K��.h��#~��hq�'l�(���Ȱ�^4�8����k�+<B��S��9B�1����ƹ^��PJ.�4]\G�B���c%���]���1q��b���̻��L'�[%:/��a����dMA���� ��K�\� Y]����?�t���iX�b��֪nR»�������K*26�%q
+E?.��V������a0��a12��1⪔Cv"V_.���^8�D�.L��A,>�I�a�(����P)Q>N�b� u��	��ꑂ�p�Q�����ӂ�*>p����B����� � OTT9��V&V�l*?�e�̀]ߣ�:Y�h��tY��d��@Y�,��*��Fx&z:��<�E����D����%g"��h������:�.��5n'q�9�&	V��|܀{��ӕ��M�Um]��R�('�W�)� רQ�����qĨc�{K,K��B���A�Ռ�B�2\^C�s��`?�9���ּ�R^�Z=�S�A�R���	��`Dh�W����,'��8�������6����˻-���I�8��`������� ��x��E/2���_����x2�KV�7�H~���4y{�����ο��O�/ڱqʔ�����O����O���/8i�ƃ�@����8 ���"�R÷x�W�����M�}a��l�L�?�5�@��~QD��2:T =/�PA���gBc�픡8 �(
+Jt��F�!j����;h`'ڸs�5z`ĶM���o��.�X�n�l�´-�Z`m��u�r����n�m��{�f��e��^��k=�Tm�tۖmBQ&�H�n�����^6dm����ڪ�6tK��!�N����U��ن\���E��*�
+c�����ߝ�4��\zg o��^���,���D;��.���%�y\�t������1>`��X9.��s:�	a	��z��`ˊ��ȅ=����<�Z�b�����
+���[�����ռ�V�>N.�5���0���*�����\&M����H[X�������^ʕ|z���q��(Ϋ&�o-<r���&��}󥩑y`�M��o҈}ꍟAN$�X���|\&e/����f��?+��+���=�r#��\ W�SNs!q�0�q�d%�4�4�H��9ˑ�����A�>Li�-����L<]��(���ci�˒��2�e�Ő-��%J�9/�Vsf�8�؏4�iLb��\�?�
+U���,���|1�!8�u \�g\ �xE��o-!�+몝_��J�&��J�.��J�!��J�)��J�%��J�-��J�#�z���Hr+I�$�J�V�_c@r�UY�$Z�	Mr�U��$Z�Mr�UY�$/Z�Mr�U��$?Z�!Mr�W9�%Gz�#�h�Z�H��*G��H�r�K��*G��H�r�K��*G��H�r�K��*G��ȨrdH��*G��ȨrdzVS4ɑQ�ȐU�ɑQ�ȐU�ɑQ�ȐU�ɑY�Ȕ�U�L�ѧ{&�Ro�ե��Ca�t ��)�,��n9��hꎺ8�f�_�Ё��J'X �f��������$x�@���F�_��O3�����	搏M�;�G�𫒉<$h�Ç�����I7q�y���ZTuc^�r�G��;��@�)�i������+M�e	R�Y�~pI��s}��i��4+� P�>��,N���y�^�Q!�Ӝ*)�^��c췖����o#0֢{�/���(�Z�?
+え��T���cx3
+��E^�����H��Q�Kq�1�[�i���S|&81�X4m���o��R�V���.h��Z�`�A>?��� �h�qʆ��)��>��y�W�Z�eO���Hr��^�Oq=Y�"iQ��x^�p�*��(.�����.�d��jf<����og���������*~��c�V%*�T��xޔ�G�-n"@h�ГWp������ت�79"��1,��J*R��o�&��A9`��q�`��:8���{��z��2���7�=���z�Hh�˴JՕ��e�%/M\$��(�R>WS^�,���&0������
+��嘚U��L*i^�����q����j5ר�7���+b9��L���<(Ӏ�1��LUo����h��hUu5�m��N�,m���T����J�M5�T���s+�I�]�/E*�E!-R���u�����IS{��Ʒ=|�J���kېse��S�eEX�c���(KY 5�c�z�̆j�E��^O�Q�L�=��:�k���.=���!��
+D�
+�n���]�t�6 ���;����U��c:�S)�Ҁ���HϊFD�L�m�O@�Z�6� QW5����K�t�o�0,U�5pq���k���-��[MP@�zTS�"���]�R�UjV��c��E��eRF��k�sD��:�n�㪮
+j&$eh:�c`Ez[�1\��}�˴#�ЂT�WII�:0��m��6Q��vP*���jd�i�%��s4[7�
+��iU�-S9�ڶV��H��:�?Ĭ��4���m�ҝJ*��bWp��V�r�X �])�Dɲ�*r6t���?[.�RM��֖TD�n��ѫ5eZU�e�B�e������Fz�)�^`��hUX��Ұz��`'B��
+�`g�a8�*�R�U��2�����V���I]�cC9� �=K7��Q�L-G+>^���VҸ�4�uʪ�`vvh�Ш6<$�7�h��;�'�T�`C|V�+a�w!.J�o����"����va�q��Z��!v"�3'Lz,��w�B�O���1�L��ǅͨ�U�Q�Z������:��V/�c֎ն��B�c�Ǌ<Gu�.͸��%�,�� OE���:��h��]�B|�y� E��m��bp�J��5�[���v�ڮ�1�1��v\��8���M�̎�t@OU4ȠhvGW[���A�m�`�2l�?��<`�R���Ƣ(3��ͭ�S����_�(���3|��P�¿�����&�O�Y0�x�H^A�6`��9�?�͎��: ����������"/|��t|�?���)� ��e[��x@��)�0	��/� i��mb���_Rt,�-il��KZZՂC���'+���9����0N'���!e�_-��'�[��lÒ
+bn�-\��Z��=���Ê�\tr�hS�)^��+<e~�I����$ȗ��=�/>~�߀h����*�3.��$��\��2bT�i	yU����W<�S ��zQ�O���8��:�O�VC^��J�g%<�����?������&YN*_��T(7*���sR~�?����dx�$g�8��qW�n��1KX����?���⊄�"�����i5!��Q��Ee�Уx�m�����%�)���ޜ����S����Zf���� ��,��|ugY]w=�T_�Y���'��6�3]�-7�; f��-�7?_Ń�q
+�(�36�t�bξ��b)mD���C^�y�lm[���4�������-Mh�*��&(~��k�P�׋��ʗ�*�줉�TE*��
+jv��ba�������w�zO�h��v�T|IDQ�X����q,j|�iŃ8�(������F�,)GSM���,V#�qk��e�K�? r���ڄ�|r�����dh�����q	�5��kxԡ����N��'K��)tFӒ�n��꿔O����q7�Ƹ���etG��<�\�;�
+_���`�@���K������.p&� l��� �u!�eG�+���"�ɔ�j���g7�R�����V�|�!=���/����n�o�]���f���Z��i����B�VR�X��-��/^���Svk���i�ʀ6�^�}�L� �t�:�M��t������a�nq�Xq���^<��M�#���W�c����k�=�d��o�q�HAC6����2m����$W���e��|�m�S��f����g�a��E�M��W}�:v�h�Qw��|�/����N놪`��F�,�.	����9,~��vN����h*A��()j��?���O�&G�nE_R��|�}R}�?�)����ƀ���AR��@����~�d��N���X�ܱ��|�BN�$��l�O��$W2��|/�j�����W�$n�8��&�n�-�M���s%��q���vl�jg*T��}�J�1��a���tT���m�G���c�Ǻ�1{m��/߆'E�XǺ�Q{m��i�Yp��m�x���6;��Z�(D�B A�R���ڱ�G�իo;Z[���~�v�z	M�u;]�q�;VC�����p�޽�C����n@������OQ��ႊB��􁻣W���p�%���o�bA�@8��^E[�k&��J嘈�!�m���X�sd�O\�� W���lx?�"}��`�����\���,
+w���1�6�����IW���ꅴ��a%F��)�й�J!^���X7�\�(g�o��+���8!��&�i�?R:(�j�;�N�����1Q�zο7·-����'���q�
+,�2w�ZȆ��鄕�i�%Bo�b�G`��'�I���쟃,ȋoϰGެm�l<�~C�I�����b�B��V-H��bр���~K�+>�7��+��-'	��մ�h��O���rᜈ�����\xK��	<h)]�7���л�D�x�'ZS�KCY��%
+g7�XB�ľX�-iy�*�v��&���4�R�+Y�-��W����MC.��v�o]��*9����EX?U.-RӘ���U�	i9�'��S�����r�h�*>�W�Y)�j]݆�g���r����BZD���9*�������kX)�"�E l[q�+�Q����x�H_K �YQ�J������mE��I=LW�[S$�"9�U��X��X�!�mEӻA4�Uu9-_�%���¹Z�J���H&��Ƹ+�RF4�RY����P�-�����2q+2)#�[��RW��h�KE��o֑��n!�J�vM�T���C��JG[ݏ��R/*����Mj�a�H�j*�ۊC_)�E\�.��E�Z�зGs+šWı�o)��s�<�py]E�:Ҁҷ�qS��Q����o���ڦ(~]0W��k��6v�Ԟ���4����̕�+��{�H_KL�bZQ�J�����ۊd������K��H^K ۘ��5��G��_L�l+�նn9;�d�,���6���*VJ�j疳5ۊd���4iS�K4XS"���ٟu�R5r������jC�y�.��k�h{�i"j]QUm��	�-%f��k�ZK���''{���2E��x��p^�a�V*���mK�Y}�m�kf�֕�V�y�'����j�Y�����Z$�%�m����W
+G�)����ALH�v�\��D�w�VP������w�>0�%�Gu�ev'D����@������O�x�?�7�co�U��	ŋ�<�������$����>Eb��x��*/<��^�H���v����i�o⿻]��Axu=�.R�'�i�k����j+���R��n�fU]�x��?�O�]������������\�k����_��U�$�7+�����&��x��A�Y��"�n����C(�%��`�76,�\�n�"8����䝒4�~��W'c���19ᏻ] ;���BvER���y]��ظ�ai��7�aM����]Y�Q�W�����)�w�+���rm�ػ`�.���~q�[�!�O��kްەo��7����^n3(�4�"���X*l
+|-�
+r4MvZ�8v�n���w��ֲ�'�*��"�2�q�i�Ϝ�l�׌�|�/t�qF��"�3����0\��F��ZցU��}�`cmS�7d\���
+��ԆO^a1~r=���;1�}�f���T�������k���y�t2��t}��n�t�g��s2���� "˺�h��`.<����ٳ������n�������Q�:�MFjC�2\a��P߷U�j;�~wW,�������
+qz�a7����������I���9��8L 4a��Rq��j=�9�r����Ax�r�����
+K^@�n=g�/�� <����y�li��K��!	`Y��&����%�E?X�3���\".O_:9�g�g�]�ܘ�����խ8 �n�VpJF@tQ�aQD��Qk���c,���u��4|/ߚ�d9bT��:�i�D]��pC��RV�A���8�j�*.Ly�&���M'Qկ���U~VnU(��<��5�uU��)��͈Md	W5�z26��V�kq�O �"�Pĵ��-�
+�j�vX��â�����o�E;,��a����vX����ƑX�]��3�1���Śx��ҝ���~�ya���ʮ{{��끭o7GeJ�!����z�1��bɗX@����v)NX���s�Hԓ�H,�GE:�x�m��r�s%��[���747h�=VP����9�#M�aV$��NzM1;����TMl�J��T�=�3�_�a�V�����1�A-����'��[�ez*Tj8����q�?�Ο2|�.ұz�	a��
+�G�i�����50��~�$�
+�t�SP��*Р��zO<�:��6�I�x+# �C<Qpȴ6�S�<�g@�	U,� jF�!�-7���t` u��x23H�?"�V�
+H�����Q�|��^��tt�do��GET /g/stats/js/cbc-stats-top.js HTTP/1.1
+Host: www.cbc.ca
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: */*
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cbc.ca/documentaries
+Cookie: ak_bmsc=8DBDE60569F1918A9BCBBCC2B1F66EDB426E640684100000A24A3E5B199BC713~plv1xYEGXf1KKo291F7O2Jo44V5Q6A/G3gw4yVGc91fdraprNeLj99mn63FoeE7PDVBYu1SlkiV9T2C4gmiVMn/qR5gM+N+fFdNFEsreM4ieuKwXbGxM3utAE+8eqETfDuHCXjFjUnM4RV4LjoJlhGgOK8tIG7zBkNbzyARcyaik+f0TbZANqGZOrTIaroXK85tGbp/TK4gKqnxYWoQGCld7kZELfTRPTZyMT5G8gCEjVP+y/QH1BPelTGV7pfZYZH; akacd_akcx=2177452799~rv=3~id=68e8be558b4ff3fdfd87d1d8ad27051b; akaas_feed=2147483647~rv=83~id=d4cc29b7b30b756e4b0da7cef61f3158; AMCV_951720B3535680CB0A490D45%40AdobeOrg=-894706358%7CMCIDTS%7C17718%7CMCMID%7C39957149381818755601513235744938543505%7CMCAAMLH-1531413795%7C7%7CMCAAMB-1531413795%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1530816196s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-17725%7CvVersion%7C2.3.0; AMCVS_951720B3535680CB0A490D45%40AdobeOrg=1; _vfb=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.9.10.1530808996.true.00000000-0000-4000-8000-09f1839ef3d2; _vfz=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.1530808996.1.medium=referral|source=https%253A%252F%252Fwww%2Egoogle%2Ecom%252F|terms=; _vfa=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.5ed2bd2c-cc65-414d-979e-cb131bac4c31.1530808996.1530808996.1530808996.1; _vff=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.62f8bb25f4e266f64436d48e48a2ca08.; s_cc=true; cbc-session=bac46271-d802-6dbb-0e55-5541cf93ac33; bm_sv=30E9571D2D6795A1F5A6B836366E7BD1~UkWX3pAx6yc+ANZGlH/GouEMUHKtgLqpnkDDEfmRhyvUR0xf3TJhqsvJUP4eu4onwHLTwiEsp+3s4RjkpWNtz3N/0BjRO0fjATHvq0iYpxvgSu7WR8sPOVkdxrRvaU9YGU01aWI7l4sYFqKHJsVU45iG1A7BtmyiL0dSnbVTXsk=; cbc_visitor=ead6bff5-8d0f-4e08-9bdc-bbabc114ee86; amplitude_id_statswww.cbc.ca=eyJkZXZpY2VJZCI6IjcyZjE4YzNkLWEwNjYtNDQ1OC05YjM4LTAzOTZlY2RiODhkMFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTUzMDgwODk5ODY2MSwibGFzdEV2ZW50VGltZSI6MTUzMDgwOTAzMzY3MiwiZXZlbnRJZCI6OCwiaWRlbnRpZnlJZCI6MTQsInNlcXVlbmNlTnVtYmVyIjoyMn0=; cX_S=jj8s5ixtanm7bbco; cX_P=jj8s5ixujmryydwv; _cb_ls=1; _cb=Bz00F8DgkdVPDPsBm9; _chartbeat2=.1530808998746.1530809026806.1.DnfECY-TixHC5Ux-H9zvM7DADH93.4; _cb_svref=https%3A%2F%2Fwww.google.com%2F; RT="sl=5&ss=1530808994105&tt=21391&obo=2&bcn=%2F%2F17d98a5d.akstat.io%2F&sh=1530809034612%3D5%3A2%3A21391%2C1530809024227%3D4%3A2%3A12285%2C1530809024215%3D3%3A1%3A12285%2C1530809011839%3D2%3A0%3A12285%2C1530809000934%3D1%3A0%3A5749&dm=cbc.ca&si=ab6bbb48-904b-46c4-81b2-f747a978c3f4&ld=1530809034612&r=https%3A%2F%2Fwww.cbc.ca%2Fnews%2Fthenational%2Ftrapped-thai-soccer-team-faces-complex-rescue-1.4734711&ul=1530809037187&hd=1530809038377"; _chartbeat5=110,13,http%3A%2F%2Fwww.cbc.ca%2F,http%3A%2F%2Fwww.cbc.ca%2Fsitemap,DgCgXLDyMqzPD36EpEDT-mZABiTOV-,,c,BWAqGRuCNnKCcwHcvCKyj1CB5jfPV,cbc.ca,; s_sq=%5B%5BB%5D%5D; SC_LINKS=%5B%5BB%5D%5D; amplitudeDeviceID=72f18c3d-a066-4458-9b38-0396ecdb88d0R; ACE-COOKIE=R1709209244; avcaff_volume=null; avcaff_captions=null; avcaff_autodockdisable=null; cbcvideoheartbeatplayer=1; _chartbeat4=t=SwqJND9K2aOBwp4y7hMo4aC3kCpo&E=3&x=0&c=0.19&y=2671&w=591
+Connection: keep-alive
+
+HTTP/1.1 200 OK
+Server: Apache/2.2.15 (Red Hat)
+Content-Type: text/javascript
+Access-Control-Allow-Origin: *
+Server-Timing: edge; dur=0;
+Server-Timing: cdn-cache; desc=HIT;
+Vary: Accept-Encoding
+X-Origin-Server: static01_cache04
+Content-Encoding: gzip
+Cache-Control: max-age=1
+Date: Thu, 05 Jul 2018 16:43:58 GMT
+Transfer-Encoding:  chunked
+Connection: keep-alive
+Connection: Transfer-Encoding
+
+00006000
+�       佋V�H�(�+F���ʉ�EWɨ�)���
+nA����#��Q�,y$�G����/�?v#"J=T��9w�;k��򝑑����"��4K�Qf�n��q���y<���"eAY�'�����8\_�R�Q�hO�,N���͝��g�$jȒ|��drhsuw�5�#�bm{�������<������\�!�O��Y�_������ǐ2N;��,��V\����e�L����O����2������:H{����6�^>Ŭ5�Z�~zz�%��'ٽmQ�Y�㣝����{��!]@1�h��yxoc7�O�����Y:LV4��Ȋ4(�-�(�~�]�m�tKL�v�������b�[�ͭ �I���F �9�<��Y_�������W)ce�9 g4�T��J�������8*�L�V)F���%T���[����Ŀ���P�#g�� Au�S�?>���`��>��-�p��������BM��%S���}Z��VJ���^��ʏ��PA`U> @W.^a�`bs�T�b��П�m�?n;jm��Kvy/i6�l4�_~��;|��h ~�?�ɏۯެw_�vvw�ӆ�&�x�z�y�z��n$gL��M{�F۞jYԅuY��
+�Y�ѯ0���i��0�,`��`�E��{�ݷ�ow~��}������pL�� �Ahg��u�$�IZ���a(V*�-)����0q�M�%��q<��`Q�� X�`b����J[��yl�.����p0�a>0���Ş������Z5�$G�3�����X  A��Z�(��Eb�6.ﶣ7���q�2;�דR�Rͧ�{D�e��~���R+ƌf0@��D4�-@`j�(�l���
+``��0��08��ͫ�@F,��"Q|�~D�'%��[�$��_��~<��
+�:�r���iJ������\���ev�(�ථ�e`��MެJ��+�;�#h�����x6�M�k���9�C��q (�蚪_'�m�0I`6։¬f|��|�~�Mc�g�����^v	� fًH�{�2�p�x�/&����0}��qd�3�Hx����K���FP��� ��)�^�K�he>���9`
+�N���ad,��%N �J�7\���`�4]uVPk����"?oкB��1������g��{�/)���ik���v��w6D�� `��m�y�@PP�@8����1��7�đ�����i �b����sA>�Kj�^��"g��)�-��:��d�涗P�~z�B��h2u5�8%��K��B���ʪu%�a�d[�<c�
+=�O��b>.pt���H,̑H�����tD~�ӫ�����e5�����.��������F��"?e,e$O2���d㙦[���?�����do?'a��aIG&�#|��plj�ci������*�
+���iY�A�A��}^������64�P���%A�:�^Kn�Ʒ^��z�0�o
+�߷�&��[��V�-�7��`���梏���{�j���*� ��q>��^f��e�H�C��h�p�����I@{	�#��բ��`0�+'_���@kO�4D�/8=j�g��$^��U�nY@�I��+��q�㼂��f�ǝm����WIs�������x�����p�sܯ���oh��÷�ժ�4x��'*�@�0K�9Ͻ����w��1N�pp��S����Ν�No
+u?����ԍ�ߍ��Z��YO���n�k������d ��,t���> ��O�+f�?H��N�����-/(��$��"�/�cZy�u�{H��'��2͠\�F��2ʦ^N�z�#���not_i
+ov�lX��+mڜ]4F�d:��f�	�Z��������z�n�Q=Ț��C`��<��I:��ݟ� ����^�}��(��hgT�U�fGT�k��T=�S���=A��z1#z���	�nt
+:�ة�<�p��BVY�WϦ�]áC���W�Z�A��H�|ѧ7�E,j'�m��!L�C����"� ��i�;�!
+����bj,S��V��U��7"\(��~M�;s�U����١7�T�E0N�$�c��u7B~'��q�����ĝm*�ȤT&9� ��v+��)���
+E�G�<��#���p5�O�� 8FPk8���H��ٗ/ ��b��>2��u�,�9���h�M�p3�w怿�/iý��6�#���s����U�3Ƒ�%w�ހR�����Jُ[]�������9�",Tv߰�U/W
+��1-3"��Acs���l�q6߈��p�"����6�:�B��0��?�'������,�:����^�hH�i�Z�k����Q�ϸ:C
++�����f)Ws�PB���6���mk���㣝 ���ok��2�/3�u��g�G)�upq��bJ�`�b�&Ed?���{���w��?�)[�����
+fA�,ŉȸ�QJ��q<9�i1��0��e$�-�)�)�_�狣c���B<��ˌ*���<;9*����kd�q<"}s�X
+�Vy����O�Z�Ǩ������aN��g(~��y� V5�Y�䮭�V��f>2x����#�����Uty#� :�E��2��W��QV�<�4&�nU-����
+$K�5s��8�~�Z򇙷���>vo�`�h{����ދF�q�RL�J�3?�Y��'�P�����8H���I��K
+kB3���R��uD?k���p h	���>�all�,���ߟ�3�#Z 78P8�F�Y
+�HP�+��MN���b�"N`g�(�Fx�T���Z$'��~?(a���ߎ�s3��9Z�|��)S��15�>����$> ?�]�A߮��)�5�I�ڎ�Y揮�D��e[qd5��C�ag�0�F�؋9�jU@��'i��aqL񌥺.p�~-��4���@���dJ���jG,����Oڒ�\�п����K��b�d���E�?T�?���Q@?XM��)��)�`�q�r�Y�Hy|C�K"T���"�z�C�w�17��AX.5��
+-�����WQ/�ZB���%l��j������{k�%+��3c(��De�ԍb��/|���
+am��H��.N�k(�e�-��̦�֫��e���_�͠�ng�^��wu>��#�G~�{�~��Z�f��u3�/�m��X�J�:Cw��r�l>:�ݡ�r�.�>}�=6w��/�SfY��S��u8�{�����u{�Xi`Uq��:X_X���C��}.	����s
+�7@����8�}?��Q;�̞�����b��#;�S�!��Yk���ׅ����bR���Å����b�HTZ�ݵ{|7���q`���N4`3�v8�CG]WEOn��x厳V(?���*���n�����V�\�e�,��"�p��"!��~���̿�|�뵅1#4St���m�CWc��$l:�E��.��NO��,�N�D��!�G�w���;K�^�4K k.�	��u�V����qC��L2B��F�){�g/5�*k���?����s��{q%v���^�2�6���&2�d�A*H�E��r(kX��W��V(� h}��]������x�K7i�rz�]_o��n�o��Yq.�Б���Y<_�ψ��ʡ0��{]�.,{���E?;˓�2�k���D����u�'�0x�f��������4�F�NW���F'�\�8L ��@��� 1`��)�}�z�z@.x��78�����Y�H�8ͨ�YM�)�B�~��5��[�RK]/�D�N����E/���w��p���b 3�*l���5�-��zV�t�>�T��y���xs$�7�~ٜ~�D�(������u67�2e���8�<-*�Y��0��b�)��~r�!���B��9���&�; 3�2m���~��0��S8R�����U
+B8
+������J�8�>>p�$g1Q]�A�Q�c��u�H�R����c��1���Y#Rd�,q\;Pd�NVOpd�,�ǭF�-7D� U��� $:ۑ�鯇��*���,`Ӆl����NϟhX����6��m}���>WZ�ڏ�o�4�(���^��y�x���C��曝m��U$v��Y�n$<�����~�/M0���%�';�B6�����"(8L����M��͚���iZ=��ÿ�i�M�5�̥@ڱ9�m5&��E�{@���N����M^E�<MH���l8��>�E(t�ݦB�����w��fI}��(+'I�- I�5�<|�j�.����4�ˏ��?���K�o����=���yH�����!��Z�0�����+�Ӥ4eY��r
+0R'��gmXO������?0������#P���k�_=!�x�Q���_^	^�51���m
+Ⱥ���ov���z ���\�UZ	�8ʍ(�#�ҽ��	�[�M��m'x\��p����-H�,N�
+�Xr�`���Q����Y���������;��� �U�)P�K��+��>e���H���h�i�	
+4� �'{��SioN��J4�&��5�)k>�X��>Cѣ��.�����3��V4yF��1�քŔ�%J���D)� &�',�C�����CXI�����;0��#c�߇1 � ����~4�^��߁]����(NG�o�$ըD������KLB� B�O�T6p��-*��׬*$~F[�cT��I�e	�eY@e���}��nf#�z�'�x�m��4)BU��[���5"M�4j[�n�2��az{{ۂ�[#ߒ�μ��U��Rߺue���J��B�6F�<S��*�EnN8N�r<��������a]Z�_�`@�7x*�u�ē �/+՚cl�smϕw��M�:��$^$����rZx���k�[�|�\��fR�@�$iY�߫��
+ngY�F�_�&���<�tD��_�����֣sGX�>���/����.�p�^����L�����F9����m���/����˗��eC|��??X$==9���*�k>F�Ae%r�LGЕH���Q7W��4^�K�����d�[?t7~�X��/mB�$I3l��f{r�]{Q.�/������$|��Ǩ��:F� @��1�o��u��S����y�Rk�Ш��P�	����(�˗�O�?��;�2Q�t.�m1y�a�z{�V��3;�
+�xԊ�z�LTʪD3+���뚄��5ma���s-;��nz� �����g�i ��O,Y��I�x
+!4[�������mi��W4MVMA��*�O7����u������N{�CS��惯��'X�~��tUo�����t���h �c�(bjȒ����8/�䄻�d��çh�QL������K����6��f����co��7�n\6Z?�ks��X�"���G
+���{��, �������� �_k���c��J�.v~gV��*|mf�K��_6��O̞�0�������ޕ�!�̞ʷ����C7�4���/��e�YOAH�T,�lK�!�47�x�o"��(��lXrW�lh���Z,]�V��d��~��jM��ei]^/E������@�?��F�t)^* ����,��|�������M�����It�X��l��E��Z��5ܵ��Of+(�8a@]��YR:�;0{,�9ޢ��g�G��iE_�t��1\5�B���C�c���?��D���b��SO�E �����=`+���E�+d,$��-i�:|�,E���W/�7:�����n�/���:�<�O����P���#揙ϙ?a����C�Ϙ1?f�?��0?e~���o���?ؕϮ��gWv5eW��*`W������U®Rv���vuˮ���l��ш��l4a�)]�Q�F!��(b���6Z��ݲ���Ɯ�g�ol<c㘍�`|�8g|�x�x���M6��I�&	��lzŦcTz
+'��M��4`ӐMgl
+GΜM�ɦP2eӌMo���]c�3v���]g�z��18fN� f�?Y�� eA�~�����>gߦ�[���ط�}�τ}�g��`���+�X���,�X�`����g���ٌ�ٔͮ����l�Y�fs6�'�%l��Y�f6�a�[6�c�{�,�x�	��,
+Y�(aтE�x��>�s6���5�c���!1b���S6�C�����?}�p�����d��[��,�b鈥c�r�NYz�Ҁ����KC��X�4fi�Ҍ��ް����,��e#��Y6aٔa ��Y��e!�f,�-fٜe	pp,�a�-��`�-�l��-R��g�?؍�nF8��)�	�M�n�v�nSv�1+��1����D��]d3����GP|d�w� X/
+4Ѵ�>��9�������,"?|�����F���~ c\4g��ˑa0nT=b(N�%h�������dQ37Z�|�rknd-��ݦX@�z�����[d�^��ze��`�Qc(�)�8%^ҷ�W�����f�c��KJ����ӏ�����A
+&ͪ&��mdUݍ��c�c�p�����W�0'FS]"�ʻF�2Ts���>@���Hj�����Fw�VJ{f�o�Ŭ_��Â�xM;�[�<�K����B�n��+����88����R�Q5
+h
+�A1�q�t�(u&*W�)�JT�%�Y5�G�A�������A��������.R�"V�w����,��ˣFS�ڲB�^M1�)�}�}���̽i�zD�J��{�j��9�Mb���}qJ�<N��	Z4�w���crx#v.E��w���z$�G�5pgB���a|^C2�!H+��PjeI��$�o�8:q��I�6PJ�3(���a����h��Ϩy�R������v���t�>M�ߡ�@Fe06��$�����_����cH���=�
+�_9@\�C/\�o�A�6�����0F$՞��0�m6|��6z���~26��-%����ɕ9����@�2>�o~Of�xU�R��A���IB��6X|�0�gF��֎��N+�'�@w�[Rȷ.�Q��T�m`��p���!0G~}�B���Mz�{A?VkgE#/R�R��ϟ�/��>��x�C�G�����mZ�o������ �RX�}�M8W1V8W<>f !��Qfz�.��pN�+�"�Ӈa�x2���K@�K.�j�
+�I�Ft$F�3y�@䕚����D6��!�L���W��������3�A1����y>���(@��F��:�����g�iÏ��k��> {-�
+� ��[�	��+�E5�����L�j�/'x'1M���Ρ�N�WT���Fq�~~��,P[�c��~�$ )�k������[%��R��������:Kb4��'<���0|`��~��c��~:a=�	�X�(�|��E�9��쒙�+y�6���l&�*�n-!9�'8�ĳoV�����d*o]#F��E_o/�)�h].�f�t�	m�Y�*#I�>��S*=��C�́�PCĊ��᠙��(%�<��}��RL��C�x�n�9�����/�1��{����]��1�l���A�c3�r�<ӧ�+oȓ.��:@��3�r������'b�a�`��&�;�T趔>W1~�ɇ#A�)���@�4��GT��LۤBfy��R�6�[>> ރ�w����?i:���Qn��Ѯ6�fvAP� =���TX ����w�1I��k�������)J�p�I��3����y��ː� ��ř������%u�ֲ��)�K׋����G��pȬ���1��4||���,�9||T�-_��~kR��Ȉ��X1�EL���e��]��9>�~�ʍ����<ǆ���7�u\����7����OϕZ�1���V�3��8��`�E�y�������0�ZiǺH��M���0y�'��[�*ڟ�ri�cy܄�E�����"���?���ӿ}t�l��ŇÏG�{�n�����������+n��]�����(p��ii,��U�A�U(/��zn�N��L�ˊ�K����Ԍ<�ƥ�6�H�Z�4�9R8�#�p;@��y��,"|>��_f�S0r'��V�#1�������QSn��}A�s�F�8qӳ�\aI�= � �P���	=c}��K�A�b�;�ة_m�(��V�I������S�����
+d�ҷ��F������R+��5���Vrfb�鬞��)J��7�	[����rKY�fmɽ��j�'�w����Wف�^�I��ZAٰ�
+������(��+�e񈬲qrϊ���ɧ�J,��y�A�7 FY)F��s�E��9)z�����sUU}�{}u��E�b]��xN��>9���N@�N))�����&��&��y���o�/vƍK�Z���d�1���3k͖��}���R�(#��\�%YgL������(��ADN\(WC�DMo��[��ё+��H �b���A<��^J�#��2��D�?�~G�$h������w�MOͅI��ST�R��d��W����=d�]�6�uD������i����Y����w��*�%]"+�d���藔p��A����*�#o﷣�۝Z��g=�;�9[��CWf��$e �ל��]H7)!����A:ħW��kG�n������>�Gƙ!��ʧ2*ꕈ`)����L���S�~|�dWc�B���.4�&$�g�eZU�L�R���`�(�J�\`�OعKmIl�F��Mn���	*���ND�1�WWwh�$��D4���
+��0IB\Y�)��A-*v��:�Re��������suO���=�7�[5DުC�O��w��CC��T�D-xZv�`	��D�͘W���vEQ��kW�d���+X�_�r��Jt�)�m�b?a��R/(O:8y���v5N�J�����c&n�WϨ�C�8�~de%c�gAw	���B��`��a�.٣g�N�W��uy����K��4vE"6`yI^�rʆ�E�����N��)Z7�z|�n�ص�5E�d�sj��Z�vR�URF�F�5�RH�Tn��*��1Y��<��Y�"0-�����-�v�5K�v���V4�	k�<��D��k"�����oj��L[#`��lpȊ�$��'+h�Vc�\+_����c���ύ��2y��f Qj�&7�+融όĶ�D��sUF���WI�JO�`6�]�:��B���U/W1�� ;� ��w�1Z��;�߆g��j����D���|¡�qe2�i���&9�|��9l:�W����\zk���������MFB�X�FSm5�f�c��A��|ă^�7'�ԏ�?2�)��,����U�vɇ��B��x/k��E�vТC�
+�hM�Fo�m՚�t���9lZup7 �.���Q��.1�R��s�wP]��/�����y��ر\
+u��� ݪ��YuheL�U_|Y�6�Γ(�SA��v���c�k����述}h\���̟�� ">�k�����/�L2�bw���08�O������➛J~��z�U�
+�j�RޱD�����d,�ڽx7��ͦ����d�E ���"�b1C���Z�	���-�p,��,,�m^�Ļ�M�R����Q�[s���m�aw��2i�&\<������6��_�o�W�<��t׍�XO^��#7Ў'Tܝ�aO�-�(�1P�����t�-:����uI�!&�V���4!SF�p���\tP���@�5����ݧ�ϲd<RYҭ<NQ`z]��wqrR����,D������z�C��ʰҧ��6,d��~}#h"��!<?��
+������O���5΄ۋơtxqq�`�v��_~������@���N�ד����^!����幰V^\X�J�Xp�����n���/.zl��\�RB�zH��z�����4Έ�r!鉝�����6:K�9�)fT{��}/�D�����2�VL6s�
+�����"�_>Hcd����k�L���}��>��7����x��x��j�܇��t�\��m~�b�݁��˗ͫI�d��E��n���t6�,�6��W,}I���GT">N�0�t�<n�����З֗�+��M�����ec�9N��MH���>2�����&d����ˢ���1���noПm�����ˢ���6���ˢ�n�6�������.}���c>&|��N&�&��)y��$�L��C�V��Lxm�n%��g#������㶊��ڎ���Ύ��R��ۤ�Id'�u�Y�i9�3e������Ԍ|��?�-�9h�[E��� 2�k�+�^~:�߃�p'���h�侖K�n������u���ɀ����(VĒ{X���i�m|n�r�& �4�#!��&K{�c��áW�G�'?"�ۨ:��0*���Wr�k�W#ؘ����o�,�����qqs{w���C��76zNք��m�}���(�R�D�!М�;�=��{0_ݻv2���d�t�u~ۋ/��׋��IVLG��n��z?�c���B�V�X���(��u �wa)���m�������g$�i���ɱ|Qo<�C���y���9�A�-p�9�D�4=�\c7��$�3�Wp$�M�;@� ڃ#�Y��vQl���R��K�K�{A;�L�#��V������}��(�	������4r��G�s��>����:��۾t�Y�b�,H.a�f��<
+0��%[���1�=��Q7�=�Y��*�������z��X$�`g��2L-���{r�/���3�j�TH�9������"]_��}��O�s-z�_3���%�p9�d&ìO2zaƀEؖ����02#�$.����r?U�� s�þ���9Eo�$��k�`g̒mz{��:��o��C�I��A�Ĳ��iA9��YO���xzXYSY�R]���¯�F{�tC�m��A�p��T�"�LZ:O�F$Us.g��5��n:P`��⻼��ř��U���.�C�c@��yoR���}����{����������bS�[|����� �_~��⃻���!��e!��
+z���В�:��0�Lp�Ct�̂	H��C28�9ʓ��Nr�<�7sq5#�et�?�az�����.�e��Z?U�T��	px-:�����溝�u5�Ҭ�g*��P�-$�A�?D�[�1�F1�����o>���p�b�yxO�e�bGM��wp-{ݺ�f�Ռd��$���W	�`Q
+������z)Î]�.�JǗ���'��k>�vp&�9OF���w-F�&��\w��Ƨ�`�x���H/re�k�Pg%`^���ʥ���&�k���1��H�(�����.\$���9?�JD"�h,o�E"LTT�'7F�"�p�G�v�B:uE$�Щ�uSљ�DD�>��C�F�'�$7��E[G�.$ �����~u�m�>��d��(|`[�x�,�����C}J���G>D�� F��.�9R�?�d������	"ŵ�*N���Q�[\bz�QLrTI�����iM�C9N��\%
+���)Ʃ���_1�Bd;�����,�u��#���*�yo)7���6��hg�@��,����!��SkL�NA��+��<��H��H?*�����?c�0
+	�ǡ��ʢ��.鴫��X<����X]> ���-�
+���zA.#�E��z��>�$�x+��A���η-��9�v�^R:�2��Aئ������T�u�_+��ˤ��'S�X��5���x:]��ȋJ�DlZ`|!%.Y�N�N-�����s�f�=�"�(b�ۯ�-˒^�J�q�0D��:�˶ض��&�;zR 05?�%z��Ɨ�����ƽ�,&@�:9�r"���Ez9�]B��D���2���j��m����7�൝1�G�%���w����A|!Y=�o�[��e<���~�A�Q� �rނO��� ���?�,8�����7l6�b��N������'��
+��cwa��ݱ�<���Y�q2���@�:˰~�o|�J�e @5U���7�<g��.1n�!;��|���<j������(O% ���f���mw����h�Y���֩2��?��x�JL�P@g���p1E%'}�c�YZ26�i�����[���!~���lk4�ShO�4?E������-��*�_�?��3������� ��=�����)4Oy��7?c�� ��х���ߎ�WĬ�И���.C ���bl���]US�ܝ��#z�_4H4Xe��LW��R��.���l�2[TfK���e�u�m*��˼�e^�2���k]fG���ev�̎e,�,��.���ʼ�e��2o��]��.�V�yKe��2�v�vŶ c[�Q�#�'���	��Go��9�;��y�9�;9�;��������N�N�N���p'q'�q'rG@�����ù��# ݑ�>N;��jU�����YD�e>�n>���P7�P7�P7�PWL��O��O��O�+&��'��'��'��渳������%������������n��n�x���ٶ���v^.���9�m�m�����|co���-�k;�����5v�ܺ�����c;_�m���zl�p����-ಝ�e;��v�m�m.�zl���-�c;_��~;9�v�vr��������#ී�o'��N���~;���7��ؠ;���ἓ�yG�y'��N���;�;�4�A)%��ἓ�y'�����N��57+�e��k-|�u�嚉'A��x,4]&�(΍[(���N��%]y�WG�u���C�G7׈�j�@<�N����}��s����8���Q���7;�蔮����[{�n��.$(a��]���{C�!��ҸB�X�)`w��W�q��^_g� �y����G�^��F������]�9�R¡)Z�Q�IASYY�c�il�xEy�iٝ �Uhs�.��	�l�j�tW+��]-��C��K�Q�a ������2}��a2�ԛP��*ͨ���W����o?�9��pE����bs���i�@lf)�3�'�7��������"o�G��Sz%?��ƃQ���n��i��;�؞B&;S$<��<H,����O0��r��O��[��O�O?�Ʋ����[���uJ�=�xQ��XN@�,*SzKB���]FI�Pҹ��9A�	E�ʫ���e��U)��2�~��x��{���\��go>?�~
+g�+��D��u�"�Z[��E���׾�ދ�����5h*�A�!Q��`=�3�Jz]��$�B����G�:��͡��'th7�u��[h�q�M��9�˲ErV_��hE`5��5ؿMH�e��ܬh놖���d�=�2�r󿜴�/�`ȣ8J�]j�3PS���~�r��?�� �|I�_d:��Uy ��zW/73�u:"s`���y�!#��Ȉ����h�_&9~&@���Z{e;?Y��X�$��j����l�m��#,��M���|�	��Ё�,�������� �����!@���r3`@����
+*+V9 ����b
+�ZT'�F�5����g<	�q�b3b�Q5��MZ�>�����t[��򁪌��݅��Ƥ�q�N?r���P.�JKA}�q����Vh���r���]���� `y?3_�h}-@� +c���.F��\֢9i�eA:0�c��X�Ff�bZ+j��C��`�X����2�5�Me��(�L�� ����y����d�*[Qp28��+~V?&߻h�-��
+�}~�%w�j����9-�`�����O����_���c(7wc��`p���R�ۑ��u���ބ�m$k�+B3CK�06Iz��!��Н��7��ɶ�ɑd!|�����T%���w�{�y:X����~�G_�~�Z������D����M��n<��ҧ����!�
+00003F99
+b�x��Aau�a��RX�̓�B�7�����I8�
+5�<t�D8G�P�?�:���P��0�Hwx���C%�h��}�ŗ�<�ƭݣ�5?ĵz�T=��I���O�{w�lSrݨ��1�z0J�Y[�G'�u2��Vu�Ḙ�D�q�㊿�M����}���\,c��OD�O���i�8� ���V|���-�dDd�%#�����5��B�{��+�{t�/b�t-�2r6�ܳ	�؅�Zi�y)b^�I��ބE�kcࣚN��3�u���F-�+1��(����]YP��S,�%$A���\g��%�{af���}�fXs:[��H�j�-����@<�	J~'�/o����D�����.*A�<�AKrC������n�������L�a �#�dH�@ E��e ���CQ[�yGz�R��Bd�p;r({_���u�G��x7�|H� ��	Ep�s���z��&�>��X��e���b��REH��	��m���HƳ�+�%��<Q�)%� QbDn0�k�o#�9�s�j������� 5ӌtf(}0��R:-���򢒯�
+��v���V7P�)�4���Q� L�&nyV~����_���6r�	�'�'�m�pӴtJa	#O�:������$���xR��M�����j���Ǣ��GI��b� ���x��@ӛ���!!h&K`1Q�x�c�����vHb�h�ׄ�1"�pYk��j��T�b2Be��(- �����C��:a�ȸ#-D����>E-�,���G-j;(:A�6 �,������~5K$:����}��S#J�/u��7����EB�"��^Ѳ�2V����ᚣ=..�mu���O�G�1���X��:�B�]�"Љ�H'�L0FCk]���nX3�娉OJ�%k^pG�������U�q\妜m�N
+ /r6ĸ�Y[�8�?�@�:���)1���`H+�����Tk�Qr��<M�5H�t��p��.SK���QB����LP=E�x7Q�Q�T�O0�_���Iqz�G��]s7 }�Q���P��ƪ_�<��ĻJ:S����������/<��:�6~��'�7'��CN
+5�<97@k���Q�Z���ZG���u�'5��G�
+��o$��wb�������/��ip+��=�[�nD�j�٣���;Ңو�CV	*���r��H���Q0~�>Z�ǵ!��v���3x��H�4��� ��b|q�!�	��b|�Ɠ���7�E�å !�0����KB��\��|f�ˠ�5� љ�+��-�4�i�2ژ$��&"[�3����;�p�G��.�B<"�5U|$��<���6��1��* �0n�ʔ��vۍ�#Z-Q� �`ہ{5���� [QU&�=�y5I�� ������JK���򱋚p1j�N{?�����P2���� ���(�+��h��{�?���j�4-��.�-�g�ͼ��	��Z��k����Fm�"j��hc$F�����j�[��Z{g��֎�����:I�ʱ��?mF��2[Ԯvx,�����n_�ok�'b���Sl����ݦ��x�[�����,8..Pպ�X�.PAtCp����K����7�aH�����މ#���۔�nVPsg��_I}!��ͨ�2�F�G{�/����^�-��H
+��Vm?��?q>��,yCLN�N�ȮfW1��)"{!���i�i:b��dL���'�;��#̽E�6�~(F����-���ь���F<�oj��8&�������i��
+R�t�`�P HcU�TP}E]g(yD����$�ԁ�'�t��O�∤�<N����b�VG�1^9��A7 o���*�T�Rv8�P���a�+�����#����xS��s�Aڕ[*���AC}��EG��Y
+x�z�=ռ�8���hPt�	T�uh���G�z~������H�,+�XP��	�vt��$�Qǘ��bZ�
+�:S-6ׄ��`��" ��H����<�X�j�GD-���AA�����H�Y��;��X��
+�Mw�Ȩ�^���-Nڑ��YĖ?}��%c]FD����s��?{�c���5��؆3��2�8U�tM����Mr���dgڻi�B^V�w��濽��:���p#���ɎEsZ�!_b�����:1�6їC���e@_����PU:<����S-��ҿ�d���Jd@	���o&Լ�څ+DC����P��
+�{��J$P�ݨPJ$���3����i}ג�k���MK���.	FKV��S�s�y���Ig�\�7L�|���U;G(�[r��%G��:�2iT/EM���Mc�->��ѩH0�8�$�8��9��_��5�="�9�-��U�Eb�����Qv9m8n�A�\��pLǀ/�����jkS����J6ox����k��%���K@M�4"�O)����V�NTa���{����?������O��Q� �/q��o)\&Y����!��	:[��V�"�P���m�^'���Vr��m��&��Q�.Е�od��	s�2�P	Q���=��/���4[G
+'�|�U�[�/��c$��|�s�>��~�}�=@���OG�XI���
+?����(k;GC�j�3X�E����<������O��z��d�N�N����"f+紞TX�������<��z�?��}G[�޿������w[��f�MΟ�#�(�����g��b��e�a���oE����ӿ
+#$r��@+`r��.Z�
+hY��H�<���zc ���9�Mi!F��P`��
+Y�����������+AJ���el�K�O ��
+�m�YT'���D���i��*Ɓ� &ޱ��\Ѵ\?$�*t�-U�A�q�����k]���*$w�%/��H���K���$yD�V{�� �Yz��k�@�`(��{���Q�G �y1N��X���L`����UB̅Ņ]��6�]4��sDl:k�,��I�M���t'|��Zͻ�c��s��!�����0��t�����@����9O�7B �����I��L����{�^���.�7���)zb4�#�$1���;>#�wr�E&��_˺Hf/A��؊�5���h�ekv �Y��lN�ɹ�U��O>��N���V4��ܠE��Ѭ$��k�	Y���Yc5v b� �g���S�F�l��"בLB��Έ>#���IR�Hӷ�k�z�ˏ~�|B�F�%�_Dݜ�K{I&�]�� ur�[GeoeΒ�CEl�r�9�-5�C��)9�D�6������;���	��ScR��I]�I���K�ܣQ�o���Z�0�Ȃ��C���Q �c?4�|_�2GS��#L�d�2�
+�����Yt�(f�)�G(Y�$�'"I�@A����I����;���`�"-�<@�"D\I͇�WX�V �>�o(���l]�a�O��8Dq�j����>M��d#k::�8�d�B�"$�K�;C��+��f>J4�r�-��ߴ�B��j��RvRQ1;�X�lT5)e��W��JӞ��,7Ŭv��4eZ(�A�:m��Y�s�(�#g
+�zu�Av���l���#��c�p��4A�cq��X��8�cEG��p�Yt,^P�.�hfT��Z�1ſ�M��4ž���cq�洍�$��!��y�>��G~M��4�D:Bb딼�8k��;��ՑU��z�s:wX�+�l;R��<�O�TY�G��N�:���Ǝ�{�w���t�9�f	a��0T�(8Z���Iɡ;�7Gǫrll3���8������p���Og�@��M�N���hjH�PBr���#"�������1<k8M���+�c�宿�'�c���X�8w4���p:�{��;6��S�3���E��d����i��ؕ��cө�ԭ���y9Ɖet )����~CX�9�Xd����FA
+�Fz f1�T=�	1Y�C8���Nj!��4�/%W�g�y�H��������Nm���,����1-����1,���ݑ���|W�!鹄��</t�J)��x�I�rD��U�����P����rI� �LV4��2�e6
+�p���7V���Qֱ��h�RUX��ʼo$�ɚK9��,��ܚb��x��t\�e>����P<�4��^CU@��Z�Y��::x��kZ�q�"gy�eR-�7��X:��s�U�+Y�O/k��n���D0���16U.IU��YS�Jn��7j�R`q �����Rf����:/%Mia�EYTWq�m��
+O�D�6�FΝ�Pdk�
+�S�b��2 _j�ࡣ&���$6ĀԜ�q1
+`|6�3�Z�%������2U3�s������N
+�#����P����t�v��A��7���}���N���<����Zmy�'�S���	T��#�t/�	x��ub�t���E;�E�P7 �ҹ�K'&�>��,���ww�C�O��)g���\���A�w؁��"�����~�M�a�C`�(�+�̀r�7��g��  �t/��,��� �ZS�ֹ��ɐb���~����0��[�l�.����99+��Q�b�eFݢ +/Jt6]2k�~Wi5C���A���>������w����������������w�ۻ�������{>���lĻ�����H����(O	s�)�_��_��́zFQ�ȫ�H�tp_U�h����U�U�^�U��7�J�ŲP�%��Ec�F+�Q&��3����s����FӰ@�6�ǯz��ǻ=hbU�d�ܖV��ҹC�@��/_-{X]�%����%�F�V��P�M<r���Z�Z�'��(�j�Jн��S���g�I��������2[n�n�������S;WQ�sR˨0Z��a����<%Hkh�@�Z��T�|�!C/�m�5 i&�>|��^v�ˆKr�tu&z�k�����;@�,V�*��&�@�� e�(����(���>M~��J¾���n���_��c��v[c7��a���z~Hn��}��`�DLMׯk��Vh�r卦�����%>���P��
+(�I�ý��t}}wśd��Q3��BE���!�U��w�/͍���:�����$RO$կ�<�q�61ڭ����|�z0���ɫ�޿�r�Z������EW�~�	�@V���瀤�F�ljh��"J��B�9����ˀ��D�UR� +��J�j��#6�8�������V���i�$?s�MgO��1��P�s��`��HN���Zrē��tT��M���hOdèB�N���݊B��j."h�C����"�5kGd�_n�Un����x���D��Z�a��#=���ɽN2`RP\u�4ȴs��.��=PGm�eA����)��R����XiNHM��-��:���l�=2�h&
+KH�Y�ӍI)cI[���'5�˹á����B���sS��F��A�vG+�^c��o���wГ��M�?x��I����Ԥ��D���d��Or�L��OwJӈ�B�g���>h�P���1$_���GbQ̾|���/����"��_j ��YQ�;9�"�%J���:J����ޚMG/�K�~�1��,���Tv��+��].�Қ��;��
+�Az�+�0��z�~�%*<2�{����cۺ�����}ouu*M��sf]�-b)�I��<���9�pwWtr���R˻��d<���	��	Bjre?��;���9�SNdh�����������e����dL�ȥ��&�հf�kÂ���@���E�U7�uX�4�����qݜ���.`���9�tLN4P�B4�0��,@cd�OQ�;A�U�Db�Rͫ7�l�47)�-��o����Y>�g�S��r�l=��1�_��5�%P=i�w��,:$�o+�Y�?+ul��ۻ;ӭ�Twk�xSTͿ��{]�ۦ�a<;�y*+	����g���T䂆��.���u��	S����2��*����]�A�(���N7c��Z� Q0l	k�q�^����ӻ^\�F����S�I�໣��������j:�c�1<�T�jX#��lu,ᅏ�/"�_��i�Y���1Δ��$�9���6^_�2�@qmn��F�K�G^����[;��%���~\5�d��g�|w(�n,�$(`B�>K�p���WU�w�:ڟk}XO��*r���ˉ"��ka�w/���h��!T/��%RT��c<Nɢm�Ea��Z�r�E���e�O�Yc�<oq2nk6c�Ꮊ�6�B2C���}w���?����C����Q\�z�����wǖ�=ʲv|�y��M��і�2F�����_�J�������QW��2o@�E@�ĕL�YѦL!K������f�T.������1��*a�[�e�!�����5
+���\��IYZ�Et7���G��d�k�dV�4Ng���iAT���7oC�yS�H3U<��Y>��3&���E�Jjз�Vu������oҿ,���E&�⣭ dYE���q�'�� U#��/��D��lyzݿa���L��>�n�X�.ަ�	r̓	�ܛ�ڍ^��-�,�D�9�	��2d�Z���=��)�$��h���L�� �_�7��!��*��`t����>
+������̳���K��Y
+W��hװ���k�;�՜��ɑ�}ߢ	��tfA��ab��,��R��aS���Z�|�|��|ˇ�7J�%���+kߢ�,��K��y�
+>d-��pჟI�i���3=�,�s\M9�:��G v��������_���k��������U�&�C�gl�@ם{y^�Hb��=Ɠ	��.b
+3�{v4�h��9UI4Y!��D#�̠8��y�~�p���Xyޙ���$>
+-hܒ�4bpJQs�in|8H�g�^��G+�(m�.J4-j����e����u�c��h����xؑ���V�&#[c�s� E�O��tc���9#KOw�C���:Nw6���6���.����P\4�P�;�����}q�!\i.�7��i�V a��Nm�Sƥ���N�!�rvZ��u��:K3Do���.v;����D�����#�i��q���QQ������z�H .��¶\?<LK���OmȂ�o�o/�ڊӹI�|g/J�mQ�MQ�U�`�iGk�Q��^�9��x�y}�=�I6�Ql�1����{�Ϋ7���(����b�IKt+�;�=;�~�ơz�5X#��I��ͦ,��=3J ���t駷���7.�3tG��)���g��+������4��6���AF5CO�����~����8�tt�I<5chF5��q7�Y�������u~p�ɱШ1�X"�f�����Y�>\�/�P�:�e	/ŷ�����G3��ԥy\Q��D��02�F�.����ׯ��ү���+a������
+TL��5��]��&����ʉ�����/�e?�"���Dٖ\)�*�T��頶�k[��*F��Ƽ�� U�hs�6�'G~��*~#ؠ].i�~�i4k@�734�fW��;M?%wI�Q^U�e�n'�ˊ��R�P����B�$r95ͦ��T�)��v�R��{�_3-p xL<K du���|A���o�W�����@�؊���gɴz*��4�D� ́����xA�c[J�4���V���h���ގ_���;�aZ���o�V�k��aGz���1̺HPE���Po�WH����t����c���BN����5U�8`�BR�r�1�QS6Bc-;�
+000005EC
+�F� ��6�U8��n��"���%% k4����G��VWomm�Z)!���H'�$�1�$5�+�,G�v��]�2��������Z��Ro��[(Wj�:}H+�G��\=�Z��vk�-�W.L����d���&��^�.�ZD|�v��{u�ʕ�Ir:���s _�U��R0�l�Xs�E������)���k����N��lMCK�
+�N\f�)�W��� �}�(����D���V3T@�z�S���I��6�����/� ,������ ������F�N�r����@��Z �Ƣ�������-r$*-��K������탏�GET /g/stats/comscore.json?comscorekw=tv&cache=1530809041150 HTTP/1.1
+Host: www.cbc.ca
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: */*
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cbc.ca/documentaries
+Cookie: ak_bmsc=8DBDE60569F1918A9BCBBCC2B1F66EDB426E640684100000A24A3E5B199BC713~plv1xYEGXf1KKo291F7O2Jo44V5Q6A/G3gw4yVGc91fdraprNeLj99mn63FoeE7PDVBYu1SlkiV9T2C4gmiVMn/qR5gM+N+fFdNFEsreM4ieuKwXbGxM3utAE+8eqETfDuHCXjFjUnM4RV4LjoJlhGgOK8tIG7zBkNbzyARcyaik+f0TbZANqGZOrTIaroXK85tGbp/TK4gKqnxYWoQGCld7kZELfTRPTZyMT5G8gCEjVP+y/QH1BPelTGV7pfZYZH; akacd_akcx=2177452799~rv=3~id=68e8be558b4ff3fdfd87d1d8ad27051b; akaas_feed=2147483647~rv=83~id=d4cc29b7b30b756e4b0da7cef61f3158; AMCV_951720B3535680CB0A490D45%40AdobeOrg=-894706358%7CMCIDTS%7C17718%7CMCMID%7C39957149381818755601513235744938543505%7CMCAAMLH-1531413795%7C7%7CMCAAMB-1531413795%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1530816196s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-17725%7CvVersion%7C2.3.0; AMCVS_951720B3535680CB0A490D45%40AdobeOrg=1; _vfb=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.9.10.1530808996.true.00000000-0000-4000-8000-09f1839ef3d2; _vfz=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.1530808996.1.medium=referral|source=https%253A%252F%252Fwww%2Egoogle%2Ecom%252F|terms=; _vfa=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.5ed2bd2c-cc65-414d-979e-cb131bac4c31.1530808996.1530808996.1530808996.1; _vff=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.62f8bb25f4e266f64436d48e48a2ca08.; s_cc=true; cbc-session=bac46271-d802-6dbb-0e55-5541cf93ac33; bm_sv=30E9571D2D6795A1F5A6B836366E7BD1~UkWX3pAx6yc+ANZGlH/GouEMUHKtgLqpnkDDEfmRhyvUR0xf3TJhqsvJUP4eu4onwHLTwiEsp+3s4RjkpWNtz3N/0BjRO0fjATHvq0iYpxvgSu7WR8sPOVkdxrRvaU9YGU01aWI7l4sYFqKHJsVU45iG1A7BtmyiL0dSnbVTXsk=; cbc_visitor=ead6bff5-8d0f-4e08-9bdc-bbabc114ee86; amplitude_id_statswww.cbc.ca=eyJkZXZpY2VJZCI6IjcyZjE4YzNkLWEwNjYtNDQ1OC05YjM4LTAzOTZlY2RiODhkMFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTUzMDgwODk5ODY2MSwibGFzdEV2ZW50VGltZSI6MTUzMDgwOTAzMzY3MiwiZXZlbnRJZCI6OCwiaWRlbnRpZnlJZCI6MTQsInNlcXVlbmNlTnVtYmVyIjoyMn0=; cX_S=jj8s5ixtanm7bbco; cX_P=jj8s5ixujmryydwv; _cb_ls=1; _cb=Bz00F8DgkdVPDPsBm9; _chartbeat2=.1530808998746.1530809026806.1.DnfECY-TixHC5Ux-H9zvM7DADH93.4; _cb_svref=https%3A%2F%2Fwww.google.com%2F; RT="sl=5&ss=1530808994105&tt=21391&obo=2&bcn=%2F%2F17d98a5d.akstat.io%2F&sh=1530809034612%3D5%3A2%3A21391%2C1530809024227%3D4%3A2%3A12285%2C1530809024215%3D3%3A1%3A12285%2C1530809011839%3D2%3A0%3A12285%2C1530809000934%3D1%3A0%3A5749&dm=cbc.ca&si=ab6bbb48-904b-46c4-81b2-f747a978c3f4"; _chartbeat5=110,13,http%3A%2F%2Fwww.cbc.ca%2F,http%3A%2F%2Fwww.cbc.ca%2Fsitemap,DgCgXLDyMqzPD36EpEDT-mZABiTOV-,,c,BWAqGRuCNnKCcwHcvCKyj1CB5jfPV,cbc.ca,; s_sq=%5B%5BB%5D%5D; SC_LINKS=%5B%5BB%5D%5D; amplitudeDeviceID=72f18c3d-a066-4458-9b38-0396ecdb88d0R; ACE-COOKIE=R1709209244; avcaff_volume=null; avcaff_captions=null; avcaff_autodockdisable=null; cbcvideoheartbeatplayer=1; _chartbeat4=t=CsBhYHCRdJQCC-S2LCCrZoq3gOBkU&E=2&x=0&c=0.51&y=3058&w=591
+Connection: keep-alive
+
+HTTP/1.1 200 OK
+Server: Apache/2.2.15 (Red Hat)
+Content-Length: 41
+Content-Type: application/json
+Set-Cookie: bm_sv=30E9571D2D6795A1F5A6B836366E7BD1~UkWX3pAx6yc+ANZGlH/GouEMUHKtgLqpnkDDEfmRhyvUR0xf3TJhqsvJUP4eu4onwHLTwiEsp+3s4RjkpWNtz3N/0BjRO0fjATHvq0iYpxuxUly2cO/NCmK9ej19iXjhsb2KTRN+l3U+03rWEbumi0sREJIl57smutcWhDZPS74=; Domain=.www.cbc.ca; Path=/; Max-Age=7157; HttpOnly
+Access-Control-Allow-Origin: *
+Server-Timing: edge; dur=42;
+Vary: Accept-Encoding
+Server-Timing: origin; dur=18;, cdn-cache; desc=MISS;
+X-Origin-Server: static06_cache04
+Cache-Control: max-age=300
+Date: Thu, 05 Jul 2018 16:44:01 GMT
+Connection: keep-alive
+Set-Cookie: bm_sv=30E9571D2D6795A1F5A6B836366E7BD1~UkWX3pAx6yc+ANZGlH/GouEMUHKtgLqpnkDDEfmRhyvUR0xf3TJhqsvJUP4eu4onwHLTwiEsp+3s4RjkpWNtz3N/0BjRO0fjATHvq0iYpxtfOCCxzJWlkbkdP3oBvaw03t5p3DbDBSBrB/BRmLYBcTUjwddSCCTM3Wqp3qO27n0=; Domain=.www.cbc.ca; Path=/; Max-Age=7157; HttpOnly
+
+{
+    "comscore": "pageview_candidate"
+}
+GET /a/styles/main.css HTTP/1.1
+Host: www.cbc.ca
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.cbc.ca/documentaries
+Cookie: ak_bmsc=8DBDE60569F1918A9BCBBCC2B1F66EDB426E640684100000A24A3E5B199BC713~plv1xYEGXf1KKo291F7O2Jo44V5Q6A/G3gw4yVGc91fdraprNeLj99mn63FoeE7PDVBYu1SlkiV9T2C4gmiVMn/qR5gM+N+fFdNFEsreM4ieuKwXbGxM3utAE+8eqETfDuHCXjFjUnM4RV4LjoJlhGgOK8tIG7zBkNbzyARcyaik+f0TbZANqGZOrTIaroXK85tGbp/TK4gKqnxYWoQGCld7kZELfTRPTZyMT5G8gCEjVP+y/QH1BPelTGV7pfZYZH; akacd_akcx=2177452799~rv=3~id=68e8be558b4ff3fdfd87d1d8ad27051b; akaas_feed=2147483647~rv=83~id=d4cc29b7b30b756e4b0da7cef61f3158; AMCV_951720B3535680CB0A490D45%40AdobeOrg=-894706358%7CMCIDTS%7C17718%7CMCMID%7C39957149381818755601513235744938543505%7CMCAAMLH-1531413795%7C7%7CMCAAMB-1531413795%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1530816196s%7CNONE%7CMCAID%7CNONE%7CMCSYNCSOP%7C411-17725%7CvVersion%7C2.3.0; AMCVS_951720B3535680CB0A490D45%40AdobeOrg=1; _vfb=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.13.10.1530808996.true.00000000-0000-4000-8000-09f1839ef3d2; _vfz=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.1530808996.1.medium=referral|source=https%253A%252F%252Fwww%2Egoogle%2Ecom%252F|terms=; _vfa=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.5ed2bd2c-cc65-414d-979e-cb131bac4c31.1530808996.1530808996.1530808996.1; _vff=www%2Ecbc%2Eca.00000000-0000-4000-8000-082f79d5b829.62f8bb25f4e266f64436d48e48a2ca08.; s_cc=true; cbc-session=bac46271-d802-6dbb-0e55-5541cf93ac33; bm_sv=30E9571D2D6795A1F5A6B836366E7BD1~UkWX3pAx6yc+ANZGlH/GouEMUHKtgLqpnkDDEfmRhyvUR0xf3TJhqsvJUP4eu4onwHLTwiEsp+3s4RjkpWNtz3N/0BjRO0fjATHvq0iYpxunpkvb7U6B2xbQJXDvDCs2Cs54WeTf9t4jvUx7qjbMjIQMoTspM3/NI7HiRMJQZ2o=; cbc_visitor=ead6bff5-8d0f-4e08-9bdc-bbabc114ee86; amplitude_id_statswww.cbc.ca=eyJkZXZpY2VJZCI6IjcyZjE4YzNkLWEwNjYtNDQ1OC05YjM4LTAzOTZlY2RiODhkMFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTUzMDgwODk5ODY2MSwibGFzdEV2ZW50VGltZSI6MTUzMDgwOTA1MjMxNywiZXZlbnRJZCI6MTEsImlkZW50aWZ5SWQiOjIwLCJzZXF1ZW5jZU51bWJlciI6MzF9; cX_S=jj8s5ixtanm7bbco; cX_P=jj8s5ixujmryydwv; _cb_ls=1; _cb=Bz00F8DgkdVPDPsBm9; _chartbeat2=.1530808998746.1530809042281.1.B5VCemBbCyrODZqxyDQhRJ5DHzeux.1; RT="sl=11&ss=1530808994105&tt=34040&obo=5&bcn=%2F%2F17d98a5d.akstat.io%2F&sh=1530809053588%3D11%3A5%3A34040%2C1530809053566%3D10%3A4%3A34040%2C1530809050620%3D9%3A3%3A34040%2C1530809049957%3D8%3A2%3A34040%2C1530809049932%3D7%3A2%3A31187&dm=cbc.ca&si=ab6bbb48-904b-46c4-81b2-f747a978c3f4"; _chartbeat5=110,13,http%3A%2F%2Fwww.cbc.ca%2F,http%3A%2F%2Fwww.cbc.ca%2Fsitemap,DgCgXLDyMqzPD36EpEDT-mZABiTOV-,,c,BWAqGRuCNnKCcwHcvCKyj1CB5jfPV,cbc.ca,::144,62,http%3A%2F%2Fwww.cbc.ca%2Fdocumentaries,https%3A%2F%2Fwww.cbc.ca%2Fnatureofthings,DFifiUD-Uk8w-N8hgDBOLk3DlkWpE,,c,CTXJRSBG13nfCZVI9Wzf_1EDpzSru,cbc.ca,::279,1783,http%3A%2F%2Fwww.cbc.ca%2Fdocumentaries,https%3A%2F%2Fwww.cbc.ca%2Fpassionateeye%2Fepisodes%2Fsaudi-arabia-uncovered,CLx7CXCRZaXZCHOm7aBFRTVFxdGoM,,c,Cv-5mQa3StAfkC6uD8oQSwn7RfZ,cbc.ca,; s_sq=%5B%5BB%5D%5D; SC_LINKS=%5B%5BB%5D%5D; amplitudeDeviceID=72f18c3d-a066-4458-9b38-0396ecdb88d0R; ACE-COOKIE=R1709209244; avcaff_volume=null; avcaff_captions=null; avcaff_autodockdisable=null; cbcvideoheartbeatplayer=1; _cb_svref=null; _chartbeat4=t=DuPBVGaEqqUDy_2WGBB47wTBzf3I8&E=4&x=1653&c=0.08&y=4785&w=591
+Connection: keep-alive
+
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: text/css
+Last-Modified: Tue, 03 Jul 2018 17:21:07 GMT
+Accept-Ranges: bytes
+X-Origin-Server: ocelot-blue-db7fdf5c8-fhfm4__active_cache
+Content-Encoding: gzip
+Content-Length: 59684
+Cache-Control: max-age=120
+Expires: Thu, 05 Jul 2018 16:46:15 GMT
+Date: Thu, 05 Jul 2018 16:44:15 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+Server-Timing: cdn-cache; desc=HIT;
+Server-Timing: edge; dur=0;
+
+�       ��iw⸶0�������Vn�͜����d 2�{�Y�6�`�c�[����I�%@UW�s:]	���֖���'Թm��V^_*�&�?�RmU��CK��r<��������G�>������?��\Vޏ�����(MǦ���yI�t��7���uC�T{}�a���3�#o��*j�1�@~��/�<P4M5,%'A|��P����Bi/��{9��~�#@���T��N3����� ����_�P�{�KT��c������� Ϭy�PG��}1L}��G'O�3q��Mqn�tsV訒�[��.��Y�h�-8~�m~���*����\ƞ+��s�jm(���/ǐ4^ˢfLį���V��k�U�ͱ7l����4-W(Z9E�������b�/`ſ�c_Ǽ�^��H}�M��OoU�[�uf��-�m��3�w��Gs}������Z1/u�;֋�;�D_�j�t��6i���e���'����&d���r	g�(A��kaՎ)L5�.G��.�s��0M�եr��ި�>^� �D��l�k����@>�tbih��0X���^bʠ[����P��o�j5�_�e��N��d�;{�D����@=�~�<�ڗ���뚭��H3_R��26�� �e�6��K�R��'�D�ee�������x���'��������8�q���
+X�ʧGN�%��,�+����8ܭ�b6�Aꙁ�}Ԕc 7��
+���2�ݏa~ArQ�aS`n�@s��8S��QÄ��0eq.��D��N��r���+EO��*Hl��ʻ�5u<?rva牻�����k�Hl� P���4�GS��h;=���[��7iĕ�R��� 8�T�����P�m}F
+h.Ԩd�5��8c���[�.mZUߴf�_�de��w�Re{r$p`�'ΐ��@���b�y�&8k��}����H��<&�+L�J�fMԯ�j*h����9 _����7� ��÷��0 :�Q���i��O�Re�R��?��%��C
+p����&�O�C���"�X���Y�.케'�m��B�� Z�23�Eh
+�:bcp��Ds���[

@@ -1,0 +1,10 @@
+HTTP/1.1 302 Moved Temporarily
+Content-Length: 0
+Location: http://b.scorecardresearch.com/b2?c3=&c4=http%253A%2F%2Fwww.cbc.ca%2Fdocumentaries&c5=CBC.ca-CanadianNewsSportsEntertainmentKidsDocsRadioTV&c6=documentaries&c15=&c1=2&c2=3005684&comscorekw=tv&ns__t=1530809059117&ns_c=UTF-8&cv=3.1&c8=CBC%20Documentaries&c7=http%3A%2F%2Fwww.cbc.ca%2Fdocumentaries&c9=
+Date: Thu, 05 Jul 2018 16:44:20 GMT
+Connection: keep-alive
+Set-Cookie: UID=19413015a1261651758f87g1530809060; expires=Wed, 24-Jun-2020 16:44:20 GMT; path=/; domain=.scorecardresearch.com
+Set-Cookie: UIDR=1530809060; expires=Wed, 24-Jun-2020 16:44:20 GMT; path=/; domain=.scorecardresearch.com
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: private, no-cache, no-cache=Set-Cookie, no-store, proxy-revalidate
