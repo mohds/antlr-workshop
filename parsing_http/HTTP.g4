@@ -3,15 +3,13 @@
 
 grammar HTTP;
 
-key 	: 'Connection' | 'Date' | 'Pragma' | 'Trailer' | 'Transfer-Encoding' | 'Upgrade' | 'Via' | 'Warning' | 'Accept' | 'Accept-Charset' | 'Accept-Encoding' | 'Accept-Language' | 'Authorization' | 'Expect' | 'From' | 'Host' | 'If-Match' | 'If-Modified-Since' | 'If-None-Match' | 'If-Range' | 'If-Unmodified-Since' | 'Max-Forwards' | 'Proxy-Authorization' | 'Range' | 'Referer' | 'TE' | 'User-Agent' | 'Allow' | 'Content-Encoding' | 'Content-Language' | 'Content-Length' | 'Content-Location' | 'Content-MD5' | 'Content-Range' | 'Content-Type' | 'Expires' | 'Last-Modified' | 'Location' | 'Server' | 'X-Powered-By' | ID;
+key 	: 'Connection' | 'Date' | 'Pragma' | 'Trailer' | 'Transfer-Encoding' | 'Upgrade' | 'Via' | 'Warning' | 'Accept' | 'Accept-Charset' | 'Accept-Encoding' | 'Accept-Language' | 'Authorization' | 'Expect' | 'From' | 'Host' | 'If-Match' | 'If-Modified-Since' | 'If-None-Match' | 'If-Range' | 'If-Unmodified-Since' | 'Max-Forwards' | 'Proxy-Authorization' | 'Range' | 'Referer' | 'TE' | 'User-Agent' | 'Allow' | 'Content-Encoding' | 'Content-Language' | 'Content-Length' | 'Content-Location' | 'Content-MD5' | 'Content-Range' | 'Content-Type' | 'Expires' | 'Last-Modified' | 'Server' | 'X-Powered-By' | ID;
 
 // Ben's grammar separated the request from the reply grammar
 // I will join the request and response into the same grammar
 http	: (request | response | new_line)*;
 
-response: status_line new_line (header_message new_line)+  response_message_body?;
-
-response_message_body	: .*?;
+response: status_line new_line (header_message new_line)+;// message_body?;
 
 status_line	: http_version status_code status_text;
 
@@ -20,7 +18,9 @@ status_code	: NUMBER;
 status_text	: (~'\n')*?;
 
 // request_message in Ben's HTTP grammar
-request	: request_line new_line (header_message new_line)+; // message_body?;
+request	: request_line new_line (header_message new_line)+;// message_body?;
+
+message_body	: (.)+; 
 
 request_line	: method uri  http_version ;
 
@@ -48,7 +48,10 @@ general_header	: cache_control
 		| warning
 		| set_cookie
 		| cookie_list
+		| location
 		;
+
+location	: 'Location' ':' url;
 
 set_cookie	: 'Set-Cookie' ':' cookie_entry (';' cookie_entry)*;
 cookie_entry	: cookie_definition
@@ -403,9 +406,6 @@ last_modified	: 'Last-Modified' ':' http_date;
 
 extension_header: key ':' mime_value?;
 
-message_body	: (token_or_key)*
-		;
-
 new_line	: '\n';
 ID	: [a-zA-Z] ([\-a-zA-Z0-9])*;
 STRING	: '"' (ESC | ~["\\])* '"';
@@ -415,6 +415,6 @@ fragment UNICODE: 'u' HEX HEX HEX HEX;
 fragment HEX	: [0-9a-fA-F];
 // COMMENT: .*?;
 NUMBER	: [0-9]+;
-
 WS	: [ \t\r]+ -> skip;
-//ErrorCharacter	: . ;
+MESSAGEBODY	: .+?; // this is kept to avoid token recognition errors
+

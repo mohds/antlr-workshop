@@ -37,16 +37,6 @@ public interface HTTPListener extends ParseTreeListener {
 	 */
 	void exitResponse(HTTPParser.ResponseContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link HTTPParser#response_message_body}.
-	 * @param ctx the parse tree
-	 */
-	void enterResponse_message_body(HTTPParser.Response_message_bodyContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link HTTPParser#response_message_body}.
-	 * @param ctx the parse tree
-	 */
-	void exitResponse_message_body(HTTPParser.Response_message_bodyContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link HTTPParser#status_line}.
 	 * @param ctx the parse tree
 	 */
@@ -86,6 +76,16 @@ public interface HTTPListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitRequest(HTTPParser.RequestContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#message_body}.
+	 * @param ctx the parse tree
+	 */
+	void enterMessage_body(HTTPParser.Message_bodyContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#message_body}.
+	 * @param ctx the parse tree
+	 */
+	void exitMessage_body(HTTPParser.Message_bodyContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link HTTPParser#request_line}.
 	 * @param ctx the parse tree
@@ -156,6 +156,16 @@ public interface HTTPListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitGeneral_header(HTTPParser.General_headerContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link HTTPParser#location}.
+	 * @param ctx the parse tree
+	 */
+	void enterLocation(HTTPParser.LocationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link HTTPParser#location}.
+	 * @param ctx the parse tree
+	 */
+	void exitLocation(HTTPParser.LocationContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link HTTPParser#set_cookie}.
 	 * @param ctx the parse tree
@@ -1476,16 +1486,6 @@ public interface HTTPListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitExtension_header(HTTPParser.Extension_headerContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link HTTPParser#message_body}.
-	 * @param ctx the parse tree
-	 */
-	void enterMessage_body(HTTPParser.Message_bodyContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link HTTPParser#message_body}.
-	 * @param ctx the parse tree
-	 */
-	void exitMessage_body(HTTPParser.Message_bodyContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link HTTPParser#new_line}.
 	 * @param ctx the parse tree

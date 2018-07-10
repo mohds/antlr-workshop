@@ -51,18 +51,6 @@ public class HTTPBaseListener implements HTTPListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterResponse_message_body(HTTPParser.Response_message_bodyContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitResponse_message_body(HTTPParser.Response_message_bodyContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterStatus_line(HTTPParser.Status_lineContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -106,6 +94,18 @@ public class HTTPBaseListener implements HTTPListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitRequest(HTTPParser.RequestContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterMessage_body(HTTPParser.Message_bodyContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMessage_body(HTTPParser.Message_bodyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -190,6 +190,18 @@ public class HTTPBaseListener implements HTTPListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitGeneral_header(HTTPParser.General_headerContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLocation(HTTPParser.LocationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLocation(HTTPParser.LocationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -1774,18 +1786,6 @@ public class HTTPBaseListener implements HTTPListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitExtension_header(HTTPParser.Extension_headerContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterMessage_body(HTTPParser.Message_bodyContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitMessage_body(HTTPParser.Message_bodyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
