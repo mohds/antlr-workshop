@@ -14,9 +14,9 @@ response: status_line new_line (header_message new_line)+;// message_body?;
 status_line	: http_version status_code status_text;
 
 status_code	: NUMBER;
-
+//		  (\__/)
 status_text	: (~'\n')*?;
-
+//		  (	)
 // request_message in Ben's HTTP grammar
 request	: request_line new_line (header_message new_line)+;// message_body?;
 
@@ -63,8 +63,8 @@ cookie_entry	: cookie_definition
 		;
 
 cookie_definition	: cookie_name '=' cookie_value;
-cookie_name	: ID;
-cookie_value	: ('1' | NUMBER | ID)+; // 1 is a hack, it is being parsed as an independant token and not NUMBER
+cookie_name	: (ID | '_')+;
+cookie_value	: ('~' | '1' | NUMBER | ID)+; // 1 is a hack, it is being parsed as an independant token and not NUMBER
 
 cookie_expiration	: 'expires' '=' http_date;
 
