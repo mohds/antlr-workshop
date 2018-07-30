@@ -1,0 +1,8 @@
+/home/moe/Desktop/antlr4/runtime/Cpp/demo/CMakeFiles/install/strip.dir
+/home/moe/Desktop/antlr4/runtime/Cpp/demo/CMakeFiles/install/local.dir
+/home/moe/Desktop/antlr4/runtime/Cpp/demo/CMakeFiles/antlr4-demo.dir
+/home/moe/Desktop/antlr4/runtime/Cpp/demo/CMakeFiles/GenerateParser.dir
+/home/moe/Desktop/antlr4/runtime/Cpp/demo/CMakeFiles/edit_cache.dir
+/home/moe/Desktop/antlr4/runtime/Cpp/demo/CMakeFiles/rebuild_cache.dir
+/home/moe/Desktop/antlr4/runtime/Cpp/demo/CMakeFiles/list_install_components.dir
+/home/moe/Desktop/antlr4/runtime/Cpp/demo/CMakeFiles/install.dir

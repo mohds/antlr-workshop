@@ -1,0 +1,30 @@
+#include <iostream>
+
+#include "antlr4-runtime.h"
+#include "HTTPLexer.h"
+#include "HTTPParser.h"
+#include "HTTPBaseListener.h"
+
+using namespace org::antlr::v4::runtime;
+
+class TreeShapeListener : public HTTPBaseListener {
+	public:
+		void enterHttp(ParserRuleContext *ctx) override{
+			// do something
+		}
+};
+
+int main(int argc, const char* argv[]){
+	std::ifstream stream;
+	stream.open(argv[1]);
+	ANTLRInputStream input(stream);
+	HTTPLexer lexer(&input);
+	CommonTokenStream tokens(&lexer);
+	HTTPParser parser(&tokens);
+
+	tree::ParseTree *tree = parser.key();
+	TreeShapeListener listener;
+	tree::ParseTreeWalker::DEFAULT->walk(&listener, tree);
+
+	return 0;
+}
